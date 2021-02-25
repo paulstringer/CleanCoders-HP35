@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E8DA0BEF9501F984CBD3207 /* Pods_AcceptanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9462C566B9D2B920E0A335A /* Pods_AcceptanceTests.framework */; };
+		8CA1674125E274CD004EB88E /* AcceptanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1674025E274CD004EB88E /* AcceptanceTests.m */; };
+		8CA1674325E274CD004EB88E /* FixtureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1674225E274CD004EB88E /* FixtureExample.swift */; };
 		8CDF829A25E144C8005AADE5 /* HP35App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF829925E144C8005AADE5 /* HP35App.swift */; };
 		8CDF829C25E144C8005AADE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF829B25E144C8005AADE5 /* ContentView.swift */; };
 		8CDF829E25E144C9005AADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF829D25E144C9005AADE5 /* Assets.xcassets */; };
 		8CDF82A125E144C9005AADE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF82A025E144C9005AADE5 /* Preview Assets.xcassets */; };
 		8CDF82AC25E144C9005AADE5 /* HP35Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF82AB25E144C9005AADE5 /* HP35Tests.swift */; };
 		8CDF82B725E144C9005AADE5 /* HP35UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF82B625E144C9005AADE5 /* HP35UITests.swift */; };
+		92F90B3AAE1AAABA4128AD74 /* Pods_HP35_HP35UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF232BBC26E1EC81201F910 /* Pods_HP35_HP35UITests.framework */; };
+		E32F68CF7FBE59A2AA18DF3E /* Pods_HP35Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447281933A3998797FFC7704 /* Pods_HP35Tests.framework */; };
+		FA66C2CB166FDC98C849F501 /* Pods_HP35.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279DC1D79424FE5F9E712758 /* Pods_HP35.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23FC58876721E5E428E29016 /* Pods-AcceptanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcceptanceTests.debug.xcconfig"; path = "Target Support Files/Pods-AcceptanceTests/Pods-AcceptanceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		279DC1D79424FE5F9E712758 /* Pods_HP35.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP35.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3532D7B13AD162E4D553C73E /* Pods-HP35.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35.debug.xcconfig"; path = "Target Support Files/Pods-HP35/Pods-HP35.debug.xcconfig"; sourceTree = "<group>"; };
+		3720E00870B3E338670AB89D /* Pods-HP35Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35Tests.release.xcconfig"; path = "Target Support Files/Pods-HP35Tests/Pods-HP35Tests.release.xcconfig"; sourceTree = "<group>"; };
+		447281933A3998797FFC7704 /* Pods_HP35Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP35Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF232BBC26E1EC81201F910 /* Pods_HP35_HP35UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP35_HP35UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD7D98FCBEBEBE57F1FF5B0 /* Pods-AcceptanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcceptanceTests.release.xcconfig"; path = "Target Support Files/Pods-AcceptanceTests/Pods-AcceptanceTests.release.xcconfig"; sourceTree = "<group>"; };
+		85636D8E327F5AA17F50A741 /* Pods-HP35Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35Tests.debug.xcconfig"; path = "Target Support Files/Pods-HP35Tests/Pods-HP35Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		885FDF937A0C37969CF25454 /* Pods-HP35.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35.release.xcconfig"; path = "Target Support Files/Pods-HP35/Pods-HP35.release.xcconfig"; sourceTree = "<group>"; };
+		8A0B74A3DFEA047A223E6861 /* Pods-HP35-HP35UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35-HP35UITests.debug.xcconfig"; path = "Target Support Files/Pods-HP35-HP35UITests/Pods-HP35-HP35UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CA1673E25E274CD004EB88E /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA1674025E274CD004EB88E /* AcceptanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcceptanceTests.m; sourceTree = "<group>"; };
+		8CA1674225E274CD004EB88E /* FixtureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureExample.swift; sourceTree = "<group>"; };
+		8CA1674425E274CD004EB88E /* SlimTables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlimTables.h; sourceTree = "<group>"; };
+		8CA1674525E274CD004EB88E /* AcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		8CA1674625E274CD004EB88E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CDF829625E144C8005AADE5 /* HP35.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HP35.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDF829925E144C8005AADE5 /* HP35App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35App.swift; sourceTree = "<group>"; };
 		8CDF829B25E144C8005AADE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,13 +67,24 @@
 		8CDF82B225E144C9005AADE5 /* HP35UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HP35UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDF82B625E144C9005AADE5 /* HP35UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35UITests.swift; sourceTree = "<group>"; };
 		8CDF82B825E144C9005AADE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC6BA762BCBB1A2396C38BB /* Pods-HP35-HP35UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35-HP35UITests.release.xcconfig"; path = "Target Support Files/Pods-HP35-HP35UITests/Pods-HP35-HP35UITests.release.xcconfig"; sourceTree = "<group>"; };
+		F9462C566B9D2B920E0A335A /* Pods_AcceptanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AcceptanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8CA1673A25E274CD004EB88E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E8DA0BEF9501F984CBD3207 /* Pods_AcceptanceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CDF829325E144C8005AADE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA66C2CB166FDC98C849F501 /* Pods_HP35.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32F68CF7FBE59A2AA18DF3E /* Pods_HP35Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,19 +100,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F90B3AAE1AAABA4128AD74 /* Pods_HP35_HP35UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E234A54E90C1C7E33A1C82B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23FC58876721E5E428E29016 /* Pods-AcceptanceTests.debug.xcconfig */,
+				5BD7D98FCBEBEBE57F1FF5B0 /* Pods-AcceptanceTests.release.xcconfig */,
+				3532D7B13AD162E4D553C73E /* Pods-HP35.debug.xcconfig */,
+				885FDF937A0C37969CF25454 /* Pods-HP35.release.xcconfig */,
+				8A0B74A3DFEA047A223E6861 /* Pods-HP35-HP35UITests.debug.xcconfig */,
+				AEC6BA762BCBB1A2396C38BB /* Pods-HP35-HP35UITests.release.xcconfig */,
+				85636D8E327F5AA17F50A741 /* Pods-HP35Tests.debug.xcconfig */,
+				3720E00870B3E338670AB89D /* Pods-HP35Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8CA1673F25E274CD004EB88E /* AcceptanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CA1674025E274CD004EB88E /* AcceptanceTests.m */,
+				8CA1674225E274CD004EB88E /* FixtureExample.swift */,
+				8CA1674425E274CD004EB88E /* SlimTables.h */,
+				8CA1674525E274CD004EB88E /* AcceptanceTests-Bridging-Header.h */,
+				8CA1674625E274CD004EB88E /* Info.plist */,
+			);
+			path = AcceptanceTests;
+			sourceTree = "<group>";
+		};
 		8CDF828D25E144C8005AADE5 = {
 			isa = PBXGroup;
 			children = (
 				8CDF829825E144C8005AADE5 /* HP35 */,
 				8CDF82AA25E144C9005AADE5 /* HP35Tests */,
 				8CDF82B525E144C9005AADE5 /* HP35UITests */,
+				8CA1673F25E274CD004EB88E /* AcceptanceTests */,
 				8CDF829725E144C8005AADE5 /* Products */,
+				7E234A54E90C1C7E33A1C82B /* Pods */,
+				E931B76240FF79784D693AC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +154,7 @@
 				8CDF829625E144C8005AADE5 /* HP35.app */,
 				8CDF82A725E144C9005AADE5 /* HP35Tests.xctest */,
 				8CDF82B225E144C9005AADE5 /* HP35UITests.xctest */,
+				8CA1673E25E274CD004EB88E /* AcceptanceTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,13 +197,45 @@
 			path = HP35UITests;
 			sourceTree = "<group>";
 		};
+		E931B76240FF79784D693AC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9462C566B9D2B920E0A335A /* Pods_AcceptanceTests.framework */,
+				279DC1D79424FE5F9E712758 /* Pods_HP35.framework */,
+				4CF232BBC26E1EC81201F910 /* Pods_HP35_HP35UITests.framework */,
+				447281933A3998797FFC7704 /* Pods_HP35Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8CA1673D25E274CD004EB88E /* AcceptanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CA1674925E274CD004EB88E /* Build configuration list for PBXNativeTarget "AcceptanceTests" */;
+			buildPhases = (
+				576C9C5896BDE6E84C506EF9 /* [CP] Check Pods Manifest.lock */,
+				8CA1673925E274CD004EB88E /* Sources */,
+				8CA1673A25E274CD004EB88E /* Frameworks */,
+				8CA1673B25E274CD004EB88E /* Resources */,
+				8CA1673C25E274CD004EB88E /* [OCSP] Generate Fitnesse Test System Scripts */,
+				7FAB380B5DCA1B13B62FF0A2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AcceptanceTests;
+			productName = AcceptanceTests;
+			productReference = 8CA1673E25E274CD004EB88E /* AcceptanceTests.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8CDF829525E144C8005AADE5 /* HP35 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CDF82BB25E144C9005AADE5 /* Build configuration list for PBXNativeTarget "HP35" */;
 			buildPhases = (
+				DC21C8EB6997EDE8D4EC9F8C /* [CP] Check Pods Manifest.lock */,
 				8CDF829225E144C8005AADE5 /* Sources */,
 				8CDF829325E144C8005AADE5 /* Frameworks */,
 				8CDF829425E144C8005AADE5 /* Resources */,
@@ -154,6 +253,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CDF82BE25E144C9005AADE5 /* Build configuration list for PBXNativeTarget "HP35Tests" */;
 			buildPhases = (
+				BC44BF62D184007422374906 /* [CP] Check Pods Manifest.lock */,
 				8CDF82A325E144C9005AADE5 /* Sources */,
 				8CDF82A425E144C9005AADE5 /* Frameworks */,
 				8CDF82A525E144C9005AADE5 /* Resources */,
@@ -172,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CDF82C125E144C9005AADE5 /* Build configuration list for PBXNativeTarget "HP35UITests" */;
 			buildPhases = (
+				DD3AE8F6602EE896A7A178CB /* [CP] Check Pods Manifest.lock */,
 				8CDF82AE25E144C9005AADE5 /* Sources */,
 				8CDF82AF25E144C9005AADE5 /* Frameworks */,
 				8CDF82B025E144C9005AADE5 /* Resources */,
@@ -195,6 +296,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					8CA1673D25E274CD004EB88E = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					8CDF829525E144C8005AADE5 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -224,11 +328,19 @@
 				8CDF829525E144C8005AADE5 /* HP35 */,
 				8CDF82A625E144C9005AADE5 /* HP35Tests */,
 				8CDF82B125E144C9005AADE5 /* HP35UITests */,
+				8CA1673D25E274CD004EB88E /* AcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8CA1673B25E274CD004EB88E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CDF829425E144C8005AADE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,7 +366,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		576C9C5896BDE6E84C506EF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AcceptanceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FAB380B5DCA1B13B62FF0A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AcceptanceTests/Pods-AcceptanceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AcceptanceTests/Pods-AcceptanceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AcceptanceTests/Pods-AcceptanceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CA1673C25E274CD004EB88E /* [OCSP] Generate Fitnesse Test System Scripts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[OCSP] Generate Fitnesse Test System Scripts";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${OCSP_SUPPORT_FILE_DIR}/ocsp-generate-fitnesse-test-system-scripts.sh\" \"${OCSP_BUNDLE_RESOURCES_DIR}\"";
+		};
+		BC44BF62D184007422374906 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HP35Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC21C8EB6997EDE8D4EC9F8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HP35-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD3AE8F6602EE896A7A178CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HP35-HP35UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		8CA1673925E274CD004EB88E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA1674325E274CD004EB88E /* FixtureExample.swift in Sources */,
+				8CA1674125E274CD004EB88E /* AcceptanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CDF829225E144C8005AADE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +543,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8CA1674725E274CD004EB88E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23FC58876721E5E428E29016 /* Pods-AcceptanceTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35898HU6KU;
+				INFOPLIST_FILE = AcceptanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleancoders.acceptancetesting.AcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AcceptanceTests/AcceptanceTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CA1674825E274CD004EB88E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD7D98FCBEBEBE57F1FF5B0 /* Pods-AcceptanceTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35898HU6KU;
+				INFOPLIST_FILE = AcceptanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleancoders.acceptancetesting.AcceptanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AcceptanceTests/AcceptanceTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8CDF82B925E144C9005AADE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,12 +699,13 @@
 		};
 		8CDF82BC25E144C9005AADE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3532D7B13AD162E4D553C73E /* Pods-HP35.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HP35/Preview Content\"";
-				DEVELOPMENT_TEAM = 84CDBVGV8X;
+				DEVELOPMENT_TEAM = 35898HU6KU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HP35/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -436,12 +722,13 @@
 		};
 		8CDF82BD25E144C9005AADE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885FDF937A0C37969CF25454 /* Pods-HP35.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HP35/Preview Content\"";
-				DEVELOPMENT_TEAM = 84CDBVGV8X;
+				DEVELOPMENT_TEAM = 35898HU6KU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HP35/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -458,6 +745,7 @@
 		};
 		8CDF82BF25E144C9005AADE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85636D8E327F5AA17F50A741 /* Pods-HP35Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +768,7 @@
 		};
 		8CDF82C025E144C9005AADE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3720E00870B3E338670AB89D /* Pods-HP35Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +791,7 @@
 		};
 		8CDF82C225E144C9005AADE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0B74A3DFEA047A223E6861 /* Pods-HP35-HP35UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +812,7 @@
 		};
 		8CDF82C325E144C9005AADE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC6BA762BCBB1A2396C38BB /* Pods-HP35-HP35UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +834,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8CA1674925E274CD004EB88E /* Build configuration list for PBXNativeTarget "AcceptanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CA1674725E274CD004EB88E /* Debug */,
+				8CA1674825E274CD004EB88E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8CDF829125E144C8005AADE5 /* Build configuration list for PBXProject "HP35" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

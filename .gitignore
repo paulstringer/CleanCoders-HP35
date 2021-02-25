@@ -1,0 +1,6 @@
+HP35.xcodeproj/xcuserdata/**
+.simctl.pid
+LaunchFitnesse
+OCSlimProjectTestRunner.sh
+Pods/**
+Podfile.lock

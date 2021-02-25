@@ -1,0 +1,875 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20160618</FitNesseVersion>
+  <rootPath>HP35OperatingManual.InstantArithmetic</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>56</exceptions>
+    </counts>
+    <date>2021-02-25T17:07:34+00:00</date>
+    <runTimeInMillis>64</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;h1&gt;Instant Arithmetic&lt;/h1&gt;
+In the HP-35, arithmetic answers appear immediatly after pressing a '+', '-' 'x' or '÷' key.&lt;br/&gt;&lt;br/&gt;Try these examples. It is &lt;b&gt;not &lt;/b&gt;necessary to clear the machine between problems, but if you make an entry mistake, press 'CL X' (&lt;b&gt;CL&lt;/b&gt;EAR X) and enter the number correctly.&lt;br/&gt;&lt;br/&gt;&lt;h3&gt;To add 3 to 12&lt;/h3&gt;
+&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;HP35 driver &lt;span class="error"&gt;Could not find class HP35Driver.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;1. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;12. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ENTER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;12. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;3. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;+&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;15. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h3&gt;To subtract 3 from 12&lt;/h3&gt;
+&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;HP35 driver &lt;span class="error"&gt;Could not find class HP35Driver.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;1. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;12. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ENTER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;12. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;3. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;-&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;9. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h3&gt;To multiply 3 times 12&lt;/h3&gt;
+&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;HP35 driver &lt;span class="error"&gt;Could not find class HP35Driver.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;1. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;12. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ENTER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;12. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;3. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;x&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;36. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h3&gt;To divide 3 into 12&lt;/h3&gt;
+&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;HP35 driver &lt;span class="error"&gt;Could not find class HP35Driver.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;1. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;12. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ENTER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;12. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;3. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;÷&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;4. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;The ENTER key repeats the number &lt;br/&gt;&lt;br/&gt;&lt;h3&gt;To double 3&lt;/h3&gt;
+&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;HP35 driver &lt;span class="error"&gt;Could not find class HP35Driver.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;3. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ENTER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;+&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;6. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;h3&gt;To square 3&lt;/h3&gt;
+&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;HP35 driver &lt;span class="error"&gt;Could not find class HP35Driver.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;3. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;ENTER&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;press &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;x&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;see&lt;/td&gt;
+		&lt;td&gt;9. &lt;span class="error"&gt;The instance scriptTableActor. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>InstantArithmetic</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='make', instanceName='scriptTableActor', className='HP35Driver', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not find class HP35Driver.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_1', instruction='call', instanceName='scriptTableActor', methodName='press', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_2', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_2</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_3', instruction='call', instanceName='scriptTableActor', methodName='press', args=[2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_4', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_4</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_5', instruction='call', instanceName='scriptTableActor', methodName='press', args=[ENTER]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_5</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_6', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_7', instruction='call', instanceName='scriptTableActor', methodName='press', args=[3]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_7</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_8', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_8</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_9', instruction='call', instanceName='scriptTableActor', methodName='press', args=[+]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_9</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_10', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_10</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='HP35Driver', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not find class HP35Driver.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='press', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_2</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_3', instruction='call', instanceName='scriptTableActor', methodName='press', args=[2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_4', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_4</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_5', instruction='call', instanceName='scriptTableActor', methodName='press', args=[ENTER]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_5</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_6', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_7', instruction='call', instanceName='scriptTableActor', methodName='press', args=[3]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_7</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_8', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_8</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_9', instruction='call', instanceName='scriptTableActor', methodName='press', args=[-]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_9</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_10', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_10</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='HP35Driver', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not find class HP35Driver.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='press', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_2', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_2</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_3', instruction='call', instanceName='scriptTableActor', methodName='press', args=[2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_4', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_4</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_5', instruction='call', instanceName='scriptTableActor', methodName='press', args=[ENTER]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_5</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_6', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_7', instruction='call', instanceName='scriptTableActor', methodName='press', args=[3]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_7</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_8', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_8</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_9', instruction='call', instanceName='scriptTableActor', methodName='press', args=[x]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_9</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_10', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_10</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='make', instanceName='scriptTableActor', className='HP35Driver', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not find class HP35Driver.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='press', args=[1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_2</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_3', instruction='call', instanceName='scriptTableActor', methodName='press', args=[2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_4', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_4</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_5', instruction='call', instanceName='scriptTableActor', methodName='press', args=[ENTER]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_5</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_6', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_7', instruction='call', instanceName='scriptTableActor', methodName='press', args=[3]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_7</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_8', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_8</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_9', instruction='call', instanceName='scriptTableActor', methodName='press', args=[÷]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_9</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_10', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_10</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_0', instruction='make', instanceName='scriptTableActor', className='HP35Driver', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not find class HP35Driver.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_1', instruction='call', instanceName='scriptTableActor', methodName='press', args=[3]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_2', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_2</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_3', instruction='call', instanceName='scriptTableActor', methodName='press', args=[ENTER]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_4', instruction='call', instanceName='scriptTableActor', methodName='press', args=[+]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_4</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_5', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_5</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_0', instruction='make', instanceName='scriptTableActor', className='HP35Driver', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not find class HP35Driver.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_1', instruction='call', instanceName='scriptTableActor', methodName='press', args=[3]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_2', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_2</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_3', instruction='call', instanceName='scriptTableActor', methodName='press', args=[ENTER]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_4', instruction='call', instanceName='scriptTableActor', methodName='press', args=[x]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_4</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_5', instruction='call', instanceName='scriptTableActor', methodName='see', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_5</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:./OCSlimProjectTestRunner.sh</testSystem>
+    <command>./OCSlimProjectTestRunner.sh 8086</command>
+    <exitCode>0</exitCode>
+    <stdOut>[OCSP_RUN] == RunSlimTestTargetWithSlimPort~iOS:8086 Thu 25 Feb 2021 17:07:30 GMT==
+[OCSP_RUN] Info: Test System Suggested SDK: 14.4
+[OCSP_RUN] Info: Test System Path: /Users/paulstringer/Library/Developer/Xcode/DerivedData/HP35-hjifejantbysnxfwksagydlbahat/Build/Products/Debug-iphonesimulator/AcceptanceTests.app
+[OCSP_RUN] Start Slim Test Sytem
+[OCSP_SIMCTL] == Launching Slim Host App @(#)PROGRAM:simctl  PROJECT:CoreSimulator-732.18.6  ==
+    iPhone 12 Pro Max (295FCA53-6848-4821-BE65-A141386A91A4) (Booted) 
+[OCSP_SIMCTL] Installing App Identifier:com.cleancoders.acceptancetesting.AcceptanceTests
+[OCSP_SIMCTL] Launching... (App Identifer:com.cleancoders.acceptancetesting.AcceptanceTests, Slim Port: 8086)
+[OCSP_RUN] Waiting for Slim System... (50042) Thu 25 Feb 2021 17:07:34 GMT
+  PID TTY           TIME CMD
+50042 ??         0:00.04 /Users/paulstringer/Library/Developer/CoreSimulator/Devices/295FCA53-6848-4821-BE65-A141386A91A4/data/Containers/Bundle/Application/FB644D3C-D220-4ACC-A62F-368026E4E29E/AcceptanceTests.app/AcceptanceTests 8086
+  PID TTY           TIME CMD
+[OCSP_RUN] Slim System Exited Thu 25 Feb 2021 17:07:35 GMT
+[OCSP_RUN] Slim Test System Exited Normally
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>4668</totalRunTimeInMillis>
+</testResults>
+
