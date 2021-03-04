@@ -1,8 +1,8 @@
 //
-//  AcceptanceTests.m
+//  HP35AcceptanceTests.m
 //  OCSlimProject
 //
-//  Created by OCSlimProject on 21/02/2021.
+//  Created by OCSlimProject on 27/02/2021.
 //  MIT License
 //  © 2016 Paul Stringer
 //
@@ -17,7 +17,7 @@
 
 /* Copy and paste this entry to your projects Podfile and run 'pod install' or 'pod update' as necessary
  
- target 'AcceptanceTests' do
+ target 'HP35AcceptanceTests' do
     platform :ios, '9.0'
     pod 'OCSlimProject', '~> 1.3'
  end
@@ -27,7 +27,7 @@
  
  */
 
-@interface AcceptanceTests : NSObject
+@interface HP35AcceptanceTests : NSObject
 @end
-@implementation AcceptanceTests
+@implementation HP35AcceptanceTests
 @end

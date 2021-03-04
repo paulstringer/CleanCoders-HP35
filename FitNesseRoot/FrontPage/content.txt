@@ -7,7 +7,7 @@ To add your first "page", click the [[Edit][.FrontPage?edit]] button and add a [
 |'''Hello Xcode Developer!'''                                                                               |
 |[[OCSlimProject Example][.OCSlimProjectExamplePage]]|''Try out your OCSlimProject Acceptance Tests Target''|
 
-|'''HP-35'''                                                                               |
+|'''HP-35'''                                                                                  |
 |[[HP-35 Operating Manual][.HP35OperatingManual]]|''HP-35 Operating Manual Table of Contents''|
 
 |'''To Learn More...'''                                                                                    |
