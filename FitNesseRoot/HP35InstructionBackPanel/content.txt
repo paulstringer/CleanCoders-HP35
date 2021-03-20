@@ -1,0 +1,99 @@
+Calculator Example
+
+This example is taken from the original [[Calculator Example by Ward Cunningham][http://fit.c2.com/wiki.cgi?CalculatorExample]]
+
+!img http://fit.c2.com/files/hp35bk.jpg 
+
+And as Acceptance Tests..
+
+Low battery lights all decimal points.
+
+|Calculator                 |
+|volts|watts?|points?|volts?|
+|3.75 |~=.500|false  |      |
+|3.60 |~=.500|false  |      |
+|3.45 |~=.500|false  |      |
+|3.30 |~=.500|true   |      |
+
+Improper operations flash display. Press clx.
+
+|Calculator      |
+|key  |x? |flash?|
+|100  |100|false |
+|enter|100|false |
+|0    |0  |false |
+|/    |0  |true  |
+|clx  |0  |false |
+
+clx clears the display.
+
+|Calculator           |
+|key  |x? |y? |z? |t? |
+|100  |100|   |   |   |
+|enter|100|100|   |   |
+|enter|100|100|100|   |
+|enter|100|100|100|100|
+|clx  |0  |100|100|100|
+
+clr clears all registers.
+
+|Calculator           |
+|key  |x? |y? |z? |t? |
+|100  |100|   |   |   |
+|enter|100|100|   |   |
+|enter|100|100|100|   |
+|enter|100|100|100|100|
+|clr  |0  |0  |0  |0  |
+
+chs changes sign of display. May be used as the first entry when entering negative numbers.
+
+|Calculator    |
+|key  |x?  |y? |
+|100  |100 |0  |
+|chs  |-100|0  |
+|chs  |100 |0  |
+|enter|100 |100|
+|chs  |0   |100|
+|100  |-100|100|
+
+
+chs check see https://www.hpmuseum.org/forum/thread-13465.html
+
+|Calculator   |
+|key  |x? |y? |
+|33   |33 |0  |
+|chs  |-33|0  |
+|enter|-33|-33|
+|chs  |0  |-33|
+|4    |-4 |-33|
+
+eex causes next entries to become the exponent of x. For negative expoinents chs must precede digits.
+
+The operational stack consistes of four registers (x, y, z and t). A fifth register (s) is used for constant storage.
+
+The stack is automatically raised by an entry into x or by rcl unless the entry or rcl immediately follows clx, sto or enter.
+
+Follwing any trig function z is duplicated into register t.
+
+All angles are in degrees.
+
+Example (2+3) * (4/5) / sin(30) * (4^-1.5) = 1.0000
+
+|Calculator       |
+|key  |x?    |y?  |
+|2    |2     |    |
+|enter|2     |2   |
+|3    |3     |2   |
+|+    |5     |    |
+|4    |4     |5   |
+|*    |20    |    |
+|5    |5     |20  |
+|/    |4     |    |
+|30   |30    |4   |
+|sin  |.5    |4   |
+|/    |6     |    |
+|-1.5 |-1.5  |8   |
+|enter|-1.5  |-1.5|
+|4    |4     |-1.5|
+|x^y  |.125  |8   |
+|*    |10.000|    |

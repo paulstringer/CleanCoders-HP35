@@ -9,7 +9,7 @@ To add your first "page", click the [[Edit][.FrontPage?edit]] button and add a [
 
 |'''HP-35'''                                                                                  |
 |[[HP-35 Operating Manual][.HP35OperatingManual]]|''HP-35 Operating Manual Table of Contents''|
-|[[HP-35 Instructions][.HP35Instructions]]|''HP-35 Back Of Calculator Instructions''|
+|[[HP-35 Instructions][.HP35InstructionBackPanel]]|''HP-35 Back Of Calculator Instructions''|
 
 |'''To Learn More...'''                                                                                    |
 |[[User Guide][.FitNesse.UserGuide]]                           |''Answer the rest of your questions here.''|
