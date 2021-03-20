@@ -58,15 +58,17 @@ Try these examples. It is '''not '''necessary to clear the machine between probl
 !3 To double 3
 |script|HP35 driver|
 |press |3          |
+|check |see   |3.  |
 |press |ENTER      |
+|check |see   |3.  |
 |press |+          |
 |check |see   |6.  |
 
 !3 To square 3
 |script|HP35 driver|
 |press |3          |
+|check |see   |3.  |
 |press |ENTER      |
+|check |see   |3.  |
 |press |x          |
 |check |see   |9.  |
-
-

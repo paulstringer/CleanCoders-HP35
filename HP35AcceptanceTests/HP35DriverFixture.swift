@@ -7,12 +7,11 @@
 
 import Foundation
 
-
 @objc(HP35Driver)
 
 class HP35Driver: NSObject {
 
-	let calc = HP35Calculator()
+	let calc = HP35()
 
 	@objc
 	var see: String {
@@ -22,7 +21,7 @@ class HP35Driver: NSObject {
 	@objc
 	func press(_ key: String) {
 
-		if let functionKey = HP35Calculator.FunctionKey(rawValue: key) {
+		if let functionKey = HP35FunctionKey(rawValue: key) {
 			calc.press(functionKey)
 		} else if let digit = Int(key) {
 			calc.press(digit)

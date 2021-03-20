@@ -1,17 +1,6 @@
-//
-//  HP35Calculator.swift
-//  HP35
-//
-//  Created by paulstringer on 27/02/2021.
-//
-
 import Foundation
 
-class HP35Calculator {
-
-	enum FunctionKey: String {
-		case ENTER, PLUS = "+", MINUS = "-", MULTIPLY = "x", DIVIDE = "÷"
-	}
+internal class HP35CalculatorSwift: HP35Calculator {
 
 	var display: String {
 		return "\(x)."
@@ -28,12 +17,12 @@ class HP35Calculator {
 		}
 	}
 
-	func press(_ key: FunctionKey) {
+	func press(_ key: HP35FunctionKey) {
 		
 		switch key {
 		case .ENTER:
 			y = x
-		case .PLUS:
+		case .ADD:
 			x = (y ?? 0) + x
 		case .MINUS:
 			x = (y ?? 0) - x
