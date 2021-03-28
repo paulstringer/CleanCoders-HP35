@@ -1,4 +1,5 @@
+|HP35InstructionBackPanel||13:35:05 Sun, Mar 21, 2021|
+|FrontPage||13:01:07 Sun, Mar 21, 2021|
 |HP35Instructions||17:13:47 Sat, Mar 20, 2021|
-|FrontPage||11:18:19 Thu, Mar 18, 2021|
 |HP35OperatingManual.InstantArithmetic||13:34:22 Fri, Mar 05, 2021|
 |HP35OperatingManual.SerialCalculations||12:17:50 Fri, Mar 05, 2021|

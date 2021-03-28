@@ -7,20 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C9B78DA26068ED100CC0AF7 /* HP35.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFB3125F272B800219592 /* HP35.swift */; };
-		8C9B78E62606912A00CC0AF7 /* HP35CalculatorFitC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78E52606912A00CC0AF7 /* HP35CalculatorFitC2.swift */; };
-		8C9B78E72606912A00CC0AF7 /* HP35CalculatorFitC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78E52606912A00CC0AF7 /* HP35CalculatorFitC2.swift */; };
-		8C9B78EF2606916100CC0AF7 /* HP35CalculatorFitC2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78EE2606916100CC0AF7 /* HP35CalculatorFitC2Tests.swift */; };
-		8C9B78F42606919700CC0AF7 /* FitC2CalculatorFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78F32606919700CC0AF7 /* FitC2CalculatorFixture.swift */; };
+		8C9B78E62606912A00CC0AF7 /* HP35Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */; };
+		8C9B78E72606912A00CC0AF7 /* HP35Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */; };
+		8C9B78EF2606916100CC0AF7 /* HP35CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78EE2606916100CC0AF7 /* HP35CalculatorTests.swift */; };
+		8C9B78F42606919700CC0AF7 /* HP35CalculatorFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78F32606919700CC0AF7 /* HP35CalculatorFixture.swift */; };
 		8CCEFADC25EA664000219592 /* HP35AcceptanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFADB25EA664000219592 /* HP35AcceptanceTests.m */; };
-		8CCEFB0C25EA8A6300219592 /* HP35DriverFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFB0B25EA8A6300219592 /* HP35DriverFixture.swift */; };
-		8CCEFB1125EA8DEE00219592 /* HP35CalculatorSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFB1025EA8DEE00219592 /* HP35CalculatorSwift.swift */; };
-		8CCEFB1225EA8DEE00219592 /* HP35CalculatorSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFB1025EA8DEE00219592 /* HP35CalculatorSwift.swift */; };
-		8CCEFB2325F26EB100219592 /* HP35.js in Resources */ = {isa = PBXBuildFile; fileRef = 8CCEFB2225F26EB100219592 /* HP35.js */; };
-		8CCEFB2425F26EB100219592 /* HP35.js in Resources */ = {isa = PBXBuildFile; fileRef = 8CCEFB2225F26EB100219592 /* HP35.js */; };
-		8CCEFB2925F26F9F00219592 /* HP35CalculatorJS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFB2825F26F9F00219592 /* HP35CalculatorJS.swift */; };
-		8CCEFB2A25F26F9F00219592 /* HP35CalculatorJS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFB2825F26F9F00219592 /* HP35CalculatorJS.swift */; };
-		8CCEFB3225F272B800219592 /* HP35.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFB3125F272B800219592 /* HP35.swift */; };
 		8CDF829A25E144C8005AADE5 /* HP35App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF829925E144C8005AADE5 /* HP35App.swift */; };
 		8CDF829C25E144C8005AADE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF829B25E144C8005AADE5 /* ContentView.swift */; };
 		8CDF829E25E144C9005AADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF829D25E144C9005AADE5 /* Assets.xcassets */; };
@@ -52,19 +43,14 @@
 		85636D8E327F5AA17F50A741 /* Pods-HP35Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35Tests.debug.xcconfig"; path = "Target Support Files/Pods-HP35Tests/Pods-HP35Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		885FDF937A0C37969CF25454 /* Pods-HP35.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35.release.xcconfig"; path = "Target Support Files/Pods-HP35/Pods-HP35.release.xcconfig"; sourceTree = "<group>"; };
 		8A0B74A3DFEA047A223E6861 /* Pods-HP35-HP35UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35-HP35UITests.debug.xcconfig"; path = "Target Support Files/Pods-HP35-HP35UITests/Pods-HP35-HP35UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C9B78E52606912A00CC0AF7 /* HP35CalculatorFitC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35CalculatorFitC2.swift; sourceTree = "<group>"; };
-		8C9B78EE2606916100CC0AF7 /* HP35CalculatorFitC2Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35CalculatorFitC2Tests.swift; sourceTree = "<group>"; };
-		8C9B78F32606919700CC0AF7 /* FitC2CalculatorFixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitC2CalculatorFixture.swift; sourceTree = "<group>"; };
+		8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35Calculator.swift; sourceTree = "<group>"; };
+		8C9B78EE2606916100CC0AF7 /* HP35CalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35CalculatorTests.swift; sourceTree = "<group>"; };
+		8C9B78F32606919700CC0AF7 /* HP35CalculatorFixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35CalculatorFixture.swift; sourceTree = "<group>"; };
 		8CCEFAD925EA664000219592 /* HP35AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HP35AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCEFADB25EA664000219592 /* HP35AcceptanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HP35AcceptanceTests.m; sourceTree = "<group>"; };
 		8CCEFADF25EA664000219592 /* SlimTables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlimTables.h; sourceTree = "<group>"; };
 		8CCEFAE025EA664000219592 /* HP35AcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HP35AcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8CCEFAE125EA664000219592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CCEFB0B25EA8A6300219592 /* HP35DriverFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35DriverFixture.swift; sourceTree = "<group>"; };
-		8CCEFB1025EA8DEE00219592 /* HP35CalculatorSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35CalculatorSwift.swift; sourceTree = "<group>"; };
-		8CCEFB2225F26EB100219592 /* HP35.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = HP35.js; sourceTree = "<group>"; };
-		8CCEFB2825F26F9F00219592 /* HP35CalculatorJS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35CalculatorJS.swift; sourceTree = "<group>"; };
-		8CCEFB3125F272B800219592 /* HP35.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35.swift; sourceTree = "<group>"; };
 		8CDF829625E144C8005AADE5 /* HP35.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HP35.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDF829925E144C8005AADE5 /* HP35App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35App.swift; sourceTree = "<group>"; };
 		8CDF829B25E144C8005AADE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,11 +122,7 @@
 		8C9B78DE26068EEA00CC0AF7 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				8CCEFB3125F272B800219592 /* HP35.swift */,
-				8CCEFB1025EA8DEE00219592 /* HP35CalculatorSwift.swift */,
-				8CCEFB2825F26F9F00219592 /* HP35CalculatorJS.swift */,
-				8C9B78E52606912A00CC0AF7 /* HP35CalculatorFitC2.swift */,
-				8CCEFB2225F26EB100219592 /* HP35.js */,
+				8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */,
 			);
 			name = Calculator;
 			sourceTree = "<group>";
@@ -148,8 +130,7 @@
 		8C9B78F8260691A600CC0AF7 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				8CCEFB0B25EA8A6300219592 /* HP35DriverFixture.swift */,
-				8C9B78F32606919700CC0AF7 /* FitC2CalculatorFixture.swift */,
+				8C9B78F32606919700CC0AF7 /* HP35CalculatorFixture.swift */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -219,7 +200,7 @@
 		8CDF82AA25E144C9005AADE5 /* HP35Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8C9B78EE2606916100CC0AF7 /* HP35CalculatorFitC2Tests.swift */,
+				8C9B78EE2606916100CC0AF7 /* HP35CalculatorTests.swift */,
 				8CDF82AD25E144C9005AADE5 /* Info.plist */,
 			);
 			path = HP35Tests;
@@ -344,7 +325,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CCEFB2425F26EB100219592 /* HP35.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +332,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CCEFB2325F26EB100219592 /* HP35.js in Resources */,
 				8CDF82A125E144C9005AADE5 /* Preview Assets.xcassets in Resources */,
 				8CDF829E25E144C9005AADE5 /* Assets.xcassets in Resources */,
 			);
@@ -476,13 +455,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9B78E72606912A00CC0AF7 /* HP35CalculatorFitC2.swift in Sources */,
-				8CCEFB2A25F26F9F00219592 /* HP35CalculatorJS.swift in Sources */,
-				8CCEFB1225EA8DEE00219592 /* HP35CalculatorSwift.swift in Sources */,
+				8C9B78E72606912A00CC0AF7 /* HP35Calculator.swift in Sources */,
 				8CCEFADC25EA664000219592 /* HP35AcceptanceTests.m in Sources */,
-				8C9B78F42606919700CC0AF7 /* FitC2CalculatorFixture.swift in Sources */,
-				8CCEFB0C25EA8A6300219592 /* HP35DriverFixture.swift in Sources */,
-				8C9B78DA26068ED100CC0AF7 /* HP35.swift in Sources */,
+				8C9B78F42606919700CC0AF7 /* HP35CalculatorFixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,11 +465,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9B78E62606912A00CC0AF7 /* HP35CalculatorFitC2.swift in Sources */,
-				8CCEFB2925F26F9F00219592 /* HP35CalculatorJS.swift in Sources */,
-				8CCEFB1125EA8DEE00219592 /* HP35CalculatorSwift.swift in Sources */,
+				8C9B78E62606912A00CC0AF7 /* HP35Calculator.swift in Sources */,
 				8CDF829C25E144C8005AADE5 /* ContentView.swift in Sources */,
-				8CCEFB3225F272B800219592 /* HP35.swift in Sources */,
 				8CDF829A25E144C8005AADE5 /* HP35App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,7 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9B78EF2606916100CC0AF7 /* HP35CalculatorFitC2Tests.swift in Sources */,
+				8C9B78EF2606916100CC0AF7 /* HP35CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,21 +1,24 @@
-Calculator Example
+!1 Calculator Example
+''The following examples are adapted from an original [[Calculator Example][http://fit.c2.com/wiki.cgi?CalculatorExample]] created by Ward Cunningham at the site http://fit.c2.com.''
 
-This example is taken from the original [[Calculator Example by Ward Cunningham][http://fit.c2.com/wiki.cgi?CalculatorExample]]
+!4 The HP-35 was HP's first pocket calculator. It was introduced at a time when most calculators had only the four basic functions. The HP-35 was the first pocket calculator with transcendental functions, and the first with RPN.
+!4 The following specifications have been derived from the instructions printed on the back of the calculator. (Image from http://www.hpmuseum.org/hp35.htm)
+'''!img http://fit.c2.com/files/hp35bk.jpg '''
 
-!img http://fit.c2.com/files/hp35bk.jpg 
+!2 HEWLETT-PACKARD MODEL 35 INSTRUCTIONS
+!***> Low battery lights all decimal points.
 
-And as Acceptance Tests..
+|Calculator          |
+|volts|watts?|points?|
+|3.75 |~=.500  |false  |
+|3.60 |~=.500  |false  |
+|3.45 |~=.500  |false  |
+|3.30 |~=.500  |true   |
+|3.10 |~=.500  |true   |
 
-Low battery lights all decimal points.
 
-|Calculator                 |
-|volts|watts?|points?|volts?|
-|3.75 |~=.500|false  |      |
-|3.60 |~=.500|false  |      |
-|3.45 |~=.500|false  |      |
-|3.30 |~=.500|true   |      |
-
-Improper operations flash display. Press clx.
+*!
+!***> Improper operations flash display. Press '''CLX'''.
 
 |Calculator      |
 |key  |x? |flash?|
@@ -25,7 +28,8 @@ Improper operations flash display. Press clx.
 |/    |0  |true  |
 |clx  |0  |false |
 
-clx clears the display.
+*!
+!***> '''CLX''' clears the display.
 
 |Calculator           |
 |key  |x? |y? |z? |t? |
@@ -35,7 +39,8 @@ clx clears the display.
 |enter|100|100|100|100|
 |clx  |0  |100|100|100|
 
-clr clears all registers.
+*!
+!***> '''CLR''' clears all registers.
 
 |Calculator           |
 |key  |x? |y? |z? |t? |
@@ -45,7 +50,8 @@ clr clears all registers.
 |enter|100|100|100|100|
 |clr  |0  |0  |0  |0  |
 
-chs changes sign of display. May be used as the first entry when entering negative numbers.
+*!
+!***> '''CHS''' changes sign of display. May be used as the first entry when entering negative numbers.
 
 |Calculator    |
 |key  |x?  |y? |
@@ -56,22 +62,37 @@ chs changes sign of display. May be used as the first entry when entering negat
 |chs  |0   |100|
 |100  |-100|100|
 
+!5 The '''CHS''' first entry 'bug'
+These examples show the quirky behaviour of chs on the HP-35 compared to later HP calculators when changing the sign of x AND as first entry for entering negative numbers.
 
-chs check see https://www.hpmuseum.org/forum/thread-13465.html
+The following is the actual behaviour of the HP-35 which was faithfully reproduced in the [[online simulator][https://www.hpmuseum.org/simulate/simulate.htm]]. One assumes that Ward was actually using a later HP calculator to create this test rather than an actual HP-35.
 
-|Calculator   |
-|key  |x? |y? |
-|33   |33 |0  |
-|chs  |-33|0  |
-|enter|-33|-33|
-|chs  |0  |-33|
-|4    |-4 |-33|
+-!| Comment |
+|key  |x? |y? |#Note                                                                                                                                                                         |
+|33   |33 |0  |Starts number entry mode                                                                                                                                                      |
+|chs  |-33|0  |Changes sign of x (as expected)                                                                                                                                               |
+|enter|-33|-33|Stops number entry mode                                                                                                                                                       |
+|chs  |33 |-33|Maybe the user wanted to change X to +33, which it does. BUT number entry mode was stopped but CHS starts number entry mode again and so the next entry will also be negative!|
+|4    |-4 |-33|the -4 was confusing                                                                                                                                                          |
 
-eex causes next entries to become the exponent of x. For negative expoinents chs must precede digits.
+The following is an example of what is considered the more 'correct' behaviour of the chs function and at some point was changed on later HP calculators (and is the behaviour described in Wards example)
+
+|Calculator                                                                                     |
+|key  |x? |y? |#Note                                                                            |
+|33   |33 |0  |Starts number entry mode                                                         |
+|chs  |-33|0  |Changes sign of x (as expected)                                                  |
+|enter|-33|-33|Stops number entry mode                                                          |
+|chs  |0  |-33|Starts number entry mode, rather than change the sign as number entry has stopped|
+|4    |-4 |-33|Changes the sign as expected                                                     |
+
+''NOTE: For additional discussion in the interesting behaviour of CHS see this thread at HPMuseum where these examples are copied from https://www.hpmuseum.org/forum/thread-13465.html''
+
+*!
+!***> '''EEX''' causes next entries to become the exponent of x. For negative expoinents '''CHS''' must precede digits.
 
 The operational stack consistes of four registers (x, y, z and t). A fifth register (s) is used for constant storage.
 
-The stack is automatically raised by an entry into x or by rcl unless the entry or rcl immediately follows clx, sto or enter.
+The stack is automatically raised by an entry into x or by rcl unless the entry or rcl immediately follows clx, sto or enter.
 
 Follwing any trig function z is duplicated into register t.
 
@@ -79,7 +100,8 @@ All angles are in degrees.
 
 Example (2+3) * (4/5) / sin(30) * (4^-1.5) = 1.0000
 
-|Calculator       |
+
+-!|Comment       |
 |key  |x?    |y?  |
 |2    |2     |    |
 |enter|2     |2   |
@@ -97,3 +119,5 @@ Example (2+3) * (4/5) / sin(30) * (4^-1.5) = 1.0000
 |4    |4     |-1.5|
 |x^y  |.125  |8   |
 |*    |10.000|    |
+
+*!
