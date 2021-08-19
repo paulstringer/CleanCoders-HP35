@@ -1,4 +1,11 @@
-|HP35InstructionBackPanel||13:35:05 Sun, Mar 21, 2021|
+|HP35InstructionBackPanel||16:35:32 Thu, Aug 19, 2021|
+|HP35InstructionBackPanel.UserGuide||16:33:41 Thu, Aug 19, 2021|
+|HP35InstructionBackPanel.HP35InstructionsBackPanel||16:33:04 Thu, Aug 19, 2021|
+|HP35InstructionBackPanel.SerialCalculations||16:07:43 Thu, Aug 19, 2021|
+|HP35InstructionBackPanel.SerialCalculations.SumsOfProducts||19:53:26 Sat, Jul 10, 2021|
+|HP35InstructionBackPanel.SumsOfProducts||19:36:40 Sat, Jul 10, 2021|
+|HP35InstructionBackPanel.bl||16:10:38 Sat, Jul 10, 2021|
+|HP35InstructionBackPanel.Rando||16:05:06 Sat, Jul 10, 2021|
 |FrontPage||13:01:07 Sun, Mar 21, 2021|
 |HP35Instructions||17:13:47 Sat, Mar 20, 2021|
 |HP35OperatingManual.InstantArithmetic||13:34:22 Fri, Mar 05, 2021|

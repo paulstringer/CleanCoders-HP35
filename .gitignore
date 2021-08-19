@@ -4,3 +4,5 @@ LaunchFitnesse
 OCSlimProjectTestRunner.sh
 Pods/**
 Podfile.lock
+FitNesseRoot/files/**
+FitNesseRoot/RecentChanges/
