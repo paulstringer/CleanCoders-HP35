@@ -3,12 +3,13 @@ import Foundation
 
 class Calculator {
 
-	public private(set) var register = [0.0,0.0,0.0,0.0]
+    public private(set) var register = [0.0,0.0,0.0,0.0]
 
 	var x: Double { register[0] }
 	var y: Double { register[1] }
 	var z: Double { register[2] }
 	var t: Double { register[3] }
+    var ex: String?
 
 	var flashError: Bool = false
 	var showDecimalPoints: Bool {
@@ -16,6 +17,7 @@ class Calculator {
 	}
 
 	private var enteringNumber = false
+    private var eex = false
 	private var chs = false
 
 	var volts: NSNumber = 0
@@ -34,7 +36,9 @@ class Calculator {
 		if let value = Double(key) {
 			if chs {
 				replace(-value)
-			} else {
+            } else if eex {
+                ex(value)
+            } else {
 				push(value)
 			}
 			enteringNumber = true
@@ -63,10 +67,24 @@ class Calculator {
 				chs = true
 			}
         case "eex":
-            return
+            if !enteringNumber {
+                push(1)
+                ex(0)
+            }
+            eex = true
 		default:
 			return
 		}
 	}
+
+    private let exFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.minimumIntegerDigits = 2
+        return formatter
+    }()
+
+    private func ex(_ value: Double) {
+        ex = exFormatter.string(for: value)
+    }
 
 }

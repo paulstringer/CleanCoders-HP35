@@ -26,7 +26,11 @@ class CalculatorFixture: NSObject {
 	@objc var y: Double { calc.y }
 	@objc var z: Double { calc.z }
 	@objc var t: Double { calc.t }
+    @objc var ex: String? {
+        return calc.ex
+    }
 
 	@objc var flash: Bool { calc.flashError }
+
 }
 
