@@ -22,10 +22,10 @@ class CalculatorFixture: NSObject {
 		didSet { calc.press(key) }
 	}
 
-	@objc var x: NSNumber { calc.x as NSNumber }
-	@objc var y: NSNumber { calc.y as NSNumber }
-	@objc var z: NSNumber { calc.z as NSNumber }
-	@objc var t: NSNumber { calc.t as NSNumber }
+	@objc var x: Double { calc.x }
+	@objc var y: Double { calc.y }
+	@objc var z: Double { calc.z }
+	@objc var t: Double { calc.t }
 
 	@objc var flash: Bool { calc.flashError }
 }

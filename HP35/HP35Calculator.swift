@@ -62,6 +62,8 @@ class Calculator {
 				replace(0)
 				chs = true
 			}
+        case "eex":
+            return
 		default:
 			return
 		}
