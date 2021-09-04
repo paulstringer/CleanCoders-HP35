@@ -22,7 +22,8 @@ class CalculatorFixture: NSObject {
 		didSet { calc.press(key) }
 	}
 
-	@objc var x: Double { calc.x }
+    @objc var see: String { calc.display }
+    @objc var x: Double { calc.x }
 	@objc var y: Double { calc.y }
 	@objc var z: Double { calc.z }
 	@objc var t: Double { calc.t }

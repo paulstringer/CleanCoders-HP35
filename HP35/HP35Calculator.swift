@@ -3,14 +3,17 @@ import Foundation
 
 class Calculator {
 
-    public private(set) var register = [0.0,0.0,0.0,0.0]
+    private(set) var register = [0.0,0.0,0.0,0.0]
 
 	var x: Double { register[0] }
 	var y: Double { register[1] }
 	var z: Double { register[2] }
 	var t: Double { register[3] }
     var ex: String?
-
+    var display: String {
+        "\(x)".trimmingCharacters(in: CharacterSet(charactersIn: "0"))
+    }
+    
 	var flashError: Bool = false
 	var showDecimalPoints: Bool {
 		return volts.doubleValue <= 3.30
@@ -22,25 +25,38 @@ class Calculator {
 
 	var volts: NSNumber = 0
 
-	private func push(_ value: Double) {
-		register.insert(value, at: 0)
-		register.removeLast()
+	private func push() {
+        for i in (1...3).reversed() {
+            register[i] = register[i-1]
+        }
 	}
 
-	private func replace(_ value: Double) {
+    private func pop() -> Double {
+        let value = register[0]
+        for i in 0...2 {
+            register[i] = register[i+1]
+        }
+        return value
+    }
+
+
+	private func push(_ value: Double) {
+        push()
 		register[0] = value
 	}
 
 	func press(_ key: String) {
 
-		if let value = Double(key) {
+		if let numeric = Double(key) {
 			if chs {
-				replace(-value)
+				register[0] = -numeric
             } else if eex {
-                ex(value)
+                ex(numeric)
+            } else if enteringNumber {
+				push(numeric)
             } else {
-				push(value)
-			}
+                register[0] = numeric
+            }
 			enteringNumber = true
 		}
 
@@ -49,21 +65,26 @@ class Calculator {
 			if (x == 0 ){
 				flashError = true
 			} else {
-				push(y / x)
+                let t = pop()
+                push(pop() / t)
 			}
+        case "x":
+            push(pop() * pop())
+        case "+":
+            push(pop() + pop());
 		case "clx":
 			flashError = false
 			push(0)
 		case "enter":
-			push(x)
+			push()
 			enteringNumber = false
 		case "clr":
 			register = [0.0,0.0,0.0,0.0]
 		case "chs":
 			if enteringNumber {
-				replace(-x)
+                register[0] = -x
 			} else {
-				replace(0)
+				register[0] = 0
 				chs = true
 			}
         case "eex":

@@ -1,10 +1,3 @@
-//
-//  HP35CalculatorFitTests.swift
-//  HP35Tests
-//
-//  Created by paulstringer on 20/03/2021.
-//
-
 import XCTest
 @testable import HP35
 
@@ -67,5 +60,61 @@ class HP35CalculatorTests: XCTestCase {
 		calc.press("100")
 		XCTAssertEqual(calc.register.count, 4)
 	}
+
+    func testRPNStack() {
+        calc.press("4")
+        calc.press("3")
+        calc.press("2")
+        calc.press("1")
+        assertStack(1, 2, 3, 4)
+        calc.press("5")
+        assertStack(5, 1, 2, 3)
+        calc.press("enter")
+        assertStack(5, 5, 1, 2)
+        calc.press("8")
+        assertStack(8, 5, 1, 2)
+    }
+
+    func testRPNStackAddition() {
+        calc.press("4")
+        calc.press("3")
+        calc.press("2")
+        calc.press("1")
+        calc.press("5")
+        calc.press("enter")
+        calc.press("8")
+        calc.press("+")
+        assertStack(13, 1, 2, 2)
+    }
+
+    func testRPNStackProductsDivision() {
+        calc.press("4")
+        calc.press("enter")
+        calc.press("5")
+        calc.press("+")
+        calc.press("6")
+        calc.press("enter")
+        calc.press("7")
+        calc.press("+")
+        calc.press("/")
+        assertStack(0.69, 0, 0, 0)
+    }
+
+    func testDecimalLeadingZeroDisplay() {
+        calc.press(".54")
+        XCTAssertEqual(".54", calc.display)
+    }
+
+    func testDecimalTrailingZeroDisplay() {
+        calc.press(".5400000")
+        XCTAssertEqual(".54", calc.display)
+    }
+
+    func assertStack(_ x: Double, _ y: Double, _ z: Double, _ t: Double) {
+        XCTAssertEqual(x, calc.x, accuracy: 0.01, "X")
+        XCTAssertEqual(y, calc.y, accuracy: 0.01, "Y")
+        XCTAssertEqual(z, calc.z, accuracy: 0.01, "Z")
+        XCTAssertEqual(t, calc.t, accuracy: 0.01, "T")
+    }
 
 }
