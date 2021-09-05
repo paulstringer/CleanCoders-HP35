@@ -1,5 +1,4 @@
 import Foundation
-import Foundation
 
 class Calculator {
 
@@ -9,7 +8,8 @@ class Calculator {
 	var y: Double { register[1] }
 	var z: Double { register[2] }
 	var t: Double { register[3] }
-    var ex: String?
+    var ex: String = ""
+
     var display: String {
         "\(x)".trimmingCharacters(in: CharacterSet(charactersIn: "0"))
     }
@@ -105,7 +105,7 @@ class Calculator {
     }()
 
     private func ex(_ value: Double) {
-        ex = exFormatter.string(for: value)
+        ex = exFormatter.string(for: value) ?? ""
     }
 
 }

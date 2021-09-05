@@ -12,6 +12,7 @@
 		8C9B78EF2606916100CC0AF7 /* HP35CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78EE2606916100CC0AF7 /* HP35CalculatorTests.swift */; };
 		8C9B78F42606919700CC0AF7 /* HP35CalculatorFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78F32606919700CC0AF7 /* HP35CalculatorFixture.swift */; };
 		8CCEFADC25EA664000219592 /* HP35AcceptanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFADB25EA664000219592 /* HP35AcceptanceTests.m */; };
+		8CD048DE26E4CF6900763F1A /* HP35CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD048DD26E4CF6900763F1A /* HP35CalculatorModel.swift */; };
 		8CDF829A25E144C8005AADE5 /* HP35App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF829925E144C8005AADE5 /* HP35App.swift */; };
 		8CDF829C25E144C8005AADE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF829B25E144C8005AADE5 /* ContentView.swift */; };
 		8CDF829E25E144C9005AADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF829D25E144C9005AADE5 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		8CCEFADF25EA664000219592 /* SlimTables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlimTables.h; sourceTree = "<group>"; };
 		8CCEFAE025EA664000219592 /* HP35AcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HP35AcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8CCEFAE125EA664000219592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD048DD26E4CF6900763F1A /* HP35CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35CalculatorModel.swift; sourceTree = "<group>"; };
 		8CDF829625E144C8005AADE5 /* HP35.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HP35.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDF829925E144C8005AADE5 /* HP35App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35App.swift; sourceTree = "<group>"; };
 		8CDF829B25E144C8005AADE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */,
+				8CD048DD26E4CF6900763F1A /* HP35CalculatorModel.swift */,
 			);
 			name = Calculator;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				8C9B78E62606912A00CC0AF7 /* HP35Calculator.swift in Sources */,
 				8CDF829C25E144C8005AADE5 /* ContentView.swift in Sources */,
 				8CDF829A25E144C8005AADE5 /* HP35App.swift in Sources */,
+				8CD048DE26E4CF6900763F1A /* HP35CalculatorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

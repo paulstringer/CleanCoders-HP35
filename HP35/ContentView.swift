@@ -29,6 +29,9 @@ struct CalcButton: View {
 }
 
 struct ContentView: View {
+
+    @EnvironmentObject var calculatorModel: HP35CalculatorModel
+
     var body: some View {
 
         let ROWSPACING: CGFloat = 20.0
@@ -36,14 +39,14 @@ struct ContentView: View {
         VStack {
 
             HStack {
-                Text("-1.23456789")
+                Text(calculatorModel.lhsDisplay)
                 .lineLimit(1)
                 .font(.largeTitle)
                 .foregroundColor(.red)
 
                 Spacer()
 
-                Text("-35")
+                Text(calculatorModel.rhsDisplay)
                 .lineLimit(1)
                     .font(.largeTitle)
                 .foregroundColor(.red)
@@ -157,6 +160,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let model = HP35CalculatorModel()
+        model.press("eex")
+        model.press("6")
+        return ContentView()
+            .environmentObject(model)
     }
 }
