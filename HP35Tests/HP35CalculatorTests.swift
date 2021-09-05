@@ -9,6 +9,10 @@ class HP35CalculatorTests: XCTestCase {
 		calc = Calculator()
 	}
 
+    func testInitialDisplay() {
+        XCTAssertEqual(calc.display, ".")
+    }
+
 	func testEnteringNumbers() {
 		calc.press("100")
 		XCTAssertEqual(calc.x, 100)
@@ -18,7 +22,7 @@ class HP35CalculatorTests: XCTestCase {
 		calc.press("100")
 		calc.press("enter")
 		calc.press("0")
-		calc.press("/")
+		calc.press("÷")
 		XCTAssertTrue(calc.flashError)
 	}
 
@@ -26,7 +30,7 @@ class HP35CalculatorTests: XCTestCase {
 		calc.press("100")
 		calc.press("enter")
 		calc.press("0")
-		calc.press("/")
+		calc.press("÷")
 		calc.press("clx")
 		XCTAssertFalse(calc.flashError)
 	}
@@ -35,7 +39,7 @@ class HP35CalculatorTests: XCTestCase {
 		calc.press("100")
 		calc.press("enter")
 		calc.press("1")
-		calc.press("/")
+		calc.press("÷")
 		XCTAssertFalse(calc.flashError)
 	}
 
@@ -43,7 +47,7 @@ class HP35CalculatorTests: XCTestCase {
 		calc.press("100")
 		calc.press("enter")
 		calc.press("2")
-		calc.press("/")
+		calc.press("÷")
 		XCTAssertEqual(calc.x, 50)
 	}
 
@@ -51,7 +55,7 @@ class HP35CalculatorTests: XCTestCase {
 		calc.press("100")
 		calc.press("enter")
 		calc.press("0")
-		calc.press("/")
+		calc.press("÷")
 		XCTAssertEqual(calc.x, 0)
 	}
 
@@ -63,10 +67,14 @@ class HP35CalculatorTests: XCTestCase {
 
     func testRPNStack() {
         calc.press("4")
+        calc.press("enter")
         calc.press("3")
+        calc.press("enter")
         calc.press("2")
+        calc.press("enter")
         calc.press("1")
         assertStack(1, 2, 3, 4)
+        calc.press("enter")
         calc.press("5")
         assertStack(5, 1, 2, 3)
         calc.press("enter")
@@ -77,9 +85,13 @@ class HP35CalculatorTests: XCTestCase {
 
     func testRPNStackAddition() {
         calc.press("4")
+        calc.press("enter")
         calc.press("3")
+        calc.press("enter")
         calc.press("2")
+        calc.press("enter")
         calc.press("1")
+        calc.press("enter")
         calc.press("5")
         calc.press("enter")
         calc.press("8")
@@ -89,15 +101,23 @@ class HP35CalculatorTests: XCTestCase {
 
     func testRPNStackProductsDivision() {
         calc.press("4")
+        assertStack(4, 0, 0, 0)
         calc.press("enter")
+        assertStack(4, 4, 0, 0)
         calc.press("5")
+        assertStack(5, 4, 0, 0)
         calc.press("+")
+        assertStack(9, 0, 0, 0)
         calc.press("6")
+        print(calc.register)
+        assertStack(6, 9, 0, 0)
         calc.press("enter")
+        assertStack(6, 6, 9, 0)
         calc.press("7")
         calc.press("+")
-        calc.press("/")
-        assertStack(0.69, 0, 0, 0)
+        calc.press("÷")
+        assertStack(0.6923076923, 0, 0, 0)
+        XCTAssertEqual(calc.display, ".6923076923")
     }
 
     func testDecimalLeadingZeroDisplay() {
@@ -108,6 +128,12 @@ class HP35CalculatorTests: XCTestCase {
     func testDecimalTrailingZeroDisplay() {
         calc.press(".5400000")
         XCTAssertEqual(".54", calc.display)
+    }
+
+    func testMultipleNumberKeyPresses() {
+        calc.press("1")
+        calc.press("2")
+        assertStack(12, 0, 0, 0)
     }
 
     func assertStack(_ x: Double, _ y: Double, _ z: Double, _ t: Double) {

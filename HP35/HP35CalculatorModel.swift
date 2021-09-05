@@ -6,10 +6,17 @@ class HP35CalculatorModel: ObservableObject {
     @Published var lhsDisplay: String = ""
     @Published var rhsDisplay: String?
 
+    init() {
+        self.readDisplay()
+    }
+
     func press(_ key: String) -> Void {
         let keyNormalised = key.lowercased().replacingOccurrences(of: " ", with: "")
-        print("Press \(keyNormalised)")
         calculator.press(keyNormalised)
+        readDisplay()
+    }
+
+    func readDisplay() {
         lhsDisplay = calculator.display
         rhsDisplay = calculator.ex
     }

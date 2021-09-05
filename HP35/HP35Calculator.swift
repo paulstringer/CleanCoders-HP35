@@ -11,7 +11,9 @@ class Calculator {
     var ex: String?
 
     var display: String {
-        "\(x)".trimmingCharacters(in: CharacterSet(charactersIn: "0"))
+        let xFormatted = displayFormatter.string(for: x) ?? ""
+        let displayable = xFormatted.trimmingCharacters(in: CharacterSet(charactersIn: "0"))
+        return displayable
     }
     
 	var flashError: Bool = false
@@ -20,9 +22,9 @@ class Calculator {
 	}
 
 	private var enteringNumber = false
+    private var enterOnNext = false
     private var eex = false
 	private var chs = false
-
 	var volts: NSNumber = 0
 
 	private func push() {
@@ -45,20 +47,31 @@ class Calculator {
 		register[0] = value
 	}
 
+    func press(_ numeric: Double) {
+
+        if chs {
+            register[0] = -numeric
+        } else if eex {
+            ex(numeric)
+        } else if enteringNumber {
+            if (enterOnNext) { press("enter") }
+            let combined = "\(Int(pop()))\(Int(numeric))"
+            push( Double(combined)! )
+        } else {
+            if (enterOnNext) { press("enter") }
+            register[0] = numeric
+        }
+
+        enteringNumber = true
+
+    }
+
 	func press(_ key: String) {
 
 		if let numeric = Double(key) {
-			if chs {
-				register[0] = -numeric
-            } else if eex {
-                ex(numeric)
-            } else if enteringNumber {
-				push(numeric)
-            } else {
-                register[0] = numeric
-            }
-			enteringNumber = true
-		}
+            press(numeric)
+            return
+        }
 
 		switch key {
 		case "÷":
@@ -68,22 +81,26 @@ class Calculator {
                 let t = pop()
                 push(pop() / t)
 			}
+            enterOnNext = true
         case "x":
             push(pop() * pop())
+            enterOnNext = true
         case "+":
             push(pop() + pop());
+            enterOnNext = true
 		case "clx":
 			flashError = false
 			push(0)
+            enterOnNext = true
 		case "enter":
 			push()
-			enteringNumber = false
+            enterOnNext = false
 		case "clr":
 			register = [0.0,0.0,0.0,0.0]
 		case "chs":
 			if enteringNumber {
                 register[0] = -x
-			} else {
+			} else  {
 				register[0] = 0
 				chs = true
 			}
@@ -92,10 +109,17 @@ class Calculator {
                 push(1)
                 ex(0)
             }
+            enterOnNext = true
             eex = true
 		default:
-			return
+            return
 		}
+
+        if (key != "chs") {
+            enteringNumber = false
+        }
+
+
 	}
 
     private let exFormatter: NumberFormatter = {
@@ -107,5 +131,12 @@ class Calculator {
     private func ex(_ value: Double) {
         ex = exFormatter.string(for: value)
     }
+
+    private let displayFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 10
+        formatter.alwaysShowsDecimalSeparator = true
+        return formatter
+    }()
 
 }
