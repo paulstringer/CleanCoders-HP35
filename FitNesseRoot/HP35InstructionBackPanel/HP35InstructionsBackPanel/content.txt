@@ -1,58 +1,58 @@
 !2 HEWLETT-PACKARD MODEL 35 INSTRUCTIONS
 !***> Low battery lights all decimal points.
 
-|Calculator          |
-|volts|watts?|points?|
-|3.75 |~=.500|false  |
-|3.60 |~=.500|false  |
-|3.45 |~=.500|false  |
-|3.30 |~=.500|true   |
-|3.10 |~=.500|true   |
+| Calculator |
+| volts | watts? | points? |
+| 3.75 | ~=.500 | false |
+| 3.60 | ~=.500 | false |
+| 3.45 | ~=.500 | false |
+| 3.30 | ~=.500 | true |
+| 3.10 | ~=.500 | true |
 
 *!
 !***> Improper operations flash display. Press '''CLX'''.
 
-|Calculator      |
-|key  |x? |flash?|
-|100  |100|false |
-|enter|100|false |
-|0    |0  |false |
-|/    |0  |true  |
-|clx  |0  |false |
+| Calculator |
+| key | x? | flash? |
+| 100 | 100 | false |
+| enter | 100 | false |
+| 0 | 0 | false |
+| ÷ | 0 | true |
+| clx | 0 | false |
 
 *!
 !***> '''CLX''' clears the display.
 
-|Calculator           |
-|key  |x? |y? |z? |t? |
-|100  |100|   |   |   |
-|enter|100|100|   |   |
-|enter|100|100|100|   |
-|enter|100|100|100|100|
-|clx  |0  |100|100|100|
+| Calculator |
+| key | x? | y? | z? | t? |
+| 100 | 100 | | | |
+| enter | 100 | 100 | | |
+| enter | 100 | 100 | 100 | |
+| enter | 100 | 100 | 100 | 100 |
+| clx | 0 | 100 | 100 | 100 |
 
 *!
 !***> '''CLR''' clears all registers.
 
-|Calculator           |
-|key  |x? |y? |z? |t? |
-|100  |100|   |   |   |
-|enter|100|100|   |   |
-|enter|100|100|100|   |
-|enter|100|100|100|100|
-|clr  |0  |0  |0  |0  |
+| Calculator |
+| key | x? | y? | z? | t? |
+| 100 | 100 | | | |
+| enter | 100 | 100 | | |
+| enter | 100 | 100 | 100 | |
+| enter | 100 | 100 | 100 | 100 |
+| clr | 0 | 0 | 0 | 0 |
 
 *!
 !***> '''CHS''' changes sign of display. May be used as the first entry when entering negative numbers.
 
-|Calculator    |
-|key  |x?  |y? |
-|100  |100 |0  |
-|chs  |-100|0  |
-|chs  |100 |0  |
-|enter|100 |100|
-|chs  |0   |100|
-|100  |-100|100|
+| Calculator |
+| key | x? | y? |
+| 100 | 100 | 0 |
+| chs | -100 | 0 |
+| chs | 100 | 0 |
+| enter | 100 | 100 |
+| chs | 0 | 100 |
+| 100 | -100 | 100 |
 
 !5 The '''CHS''' first entry 'bug'
 These examples show the quirky behaviour of chs on the HP-35 compared to later HP calculators when changing the sign of x AND as first entry for entering negative numbers.
@@ -60,22 +60,22 @@ These examples show the quirky behaviour of chs on the HP-35 compared to later H
 The following is the actual behaviour of the HP-35 which was faithfully reproduced in the [[online simulator][https://www.hpmuseum.org/simulate/simulate.htm]]. One assumes that Ward was actually using a later HP calculator to create this test rather than an actual HP-35.
 
 -!| Comment |
-|key  |x? |y? |#Note                                                                                                                                                                         |
-|33   |33 |0  |Starts number entry mode                                                                                                                                                      |
-|chs  |-33|0  |Changes sign of x (as expected)                                                                                                                                               |
-|enter|-33|-33|Stops number entry mode                                                                                                                                                       |
-|chs  |33 |-33|Maybe the user wanted to change X to +33, which it does. BUT number entry mode was stopped but CHS starts number entry mode again and so the next entry will also be negative!|
-|4    |-4 |-33|the -4 was confusing                                                                                                                                                          |
+| key | x? | y? | #Note |
+| 33 | 33 | 0 | Starts number entry mode |
+| chs | -33 | 0 | Changes sign of x (as expected) |
+| enter | -33 | -33 | Stops number entry mode |
+| chs | 33 | -33 | Maybe the user wanted to change X to +33, which it does. BUT number entry mode was stopped but CHS starts number entry mode again and so the next entry will also be negative! |
+| 4 | -4 | -33 | the -4 was confusing |
 
 The following is an example of what is considered the more 'correct' behaviour of the chs function and at some point was changed on later HP calculators (and is the behaviour described in Wards example)
 
-|Calculator                                                                                     |
-|key  |x? |y? |#Note                                                                            |
-|33   |33 |0  |Starts number entry mode                                                         |
-|chs  |-33|0  |Changes sign of x (as expected)                                                  |
-|enter|-33|-33|Stops number entry mode                                                          |
-|chs  |0  |-33|Starts number entry mode, rather than change the sign as number entry has stopped|
-|4    |-4 |-33|Changes the sign as expected                                                     |
+| Calculator |
+| key | x? | y? | #Note |
+| 33 | 33 | 0 | Starts number entry mode |
+| chs | -33 | 0 | Changes sign of x (as expected) |
+| enter | -33 | -33 | Stops number entry mode |
+| chs | 0 | -33 | Starts number entry mode, rather than change the sign as number entry has stopped |
+| 4 | -4 | -33 | Changes the sign as expected |
 
 ''NOTE: For additional discussion in the interesting behaviour of CHS see this thread at HPMuseum where these examples are copied from https://www.hpmuseum.org/forum/thread-13465.html''
 
@@ -84,17 +84,17 @@ The following is an example of what is considered the more 'correct' behaviour o
 
 You can enter numbers in scientific notation by using E EX (or ENTER EXPONENT) key
 
-|Calculator                                          |
-|key |x?  |ex? |#note                                |
-|15.6|15.6|null|                                     |
-|eex |15.6|null|                                     |
-|12  |15.6|12  |15,6000,0000,0000. e.g. 1.56 Trillion|
+| Calculator |
+| key | x? | ex? | #note |
+| 15.6 | 15.6 | null | |
+| eex | 15.6 | null | |
+| 12 | 15.6 | 12 | 15,6000,0000,0000. e.g. 1.56 Trillion |
 
-To enter numbers to the exact power of 10x 
+To enter numbers to the exact power of 10x
 
-|Calculator                          |
-|key|x?|ex?|#note                    |
-|eex|1 |00 |                         |
-|6  |1 |06 |1,000,000. e.g. 1 Million|
+| Calculator |
+| key | x? | ex? | #note |
+| eex | 1 | 00 | |
+| 6 | 1 | 06 | 1,000,000. e.g. 1 Million |
 
 *!

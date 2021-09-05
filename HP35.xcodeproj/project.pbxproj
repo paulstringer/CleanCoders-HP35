@@ -14,7 +14,7 @@
 		8CCEFADC25EA664000219592 /* HP35AcceptanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEFADB25EA664000219592 /* HP35AcceptanceTests.m */; };
 		8CD048DE26E4CF6900763F1A /* HP35CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD048DD26E4CF6900763F1A /* HP35CalculatorModel.swift */; };
 		8CDF829A25E144C8005AADE5 /* HP35App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF829925E144C8005AADE5 /* HP35App.swift */; };
-		8CDF829C25E144C8005AADE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF829B25E144C8005AADE5 /* ContentView.swift */; };
+		8CDF829C25E144C8005AADE5 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF829B25E144C8005AADE5 /* CalculatorView.swift */; };
 		8CDF829E25E144C9005AADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF829D25E144C9005AADE5 /* Assets.xcassets */; };
 		8CDF82A125E144C9005AADE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF82A025E144C9005AADE5 /* Preview Assets.xcassets */; };
 		9ADC0FDDA4940B59AEE0D204 /* Pods_HP35AcceptanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA07208976EBFFE241DC71B7 /* Pods_HP35AcceptanceTests.framework */; };
@@ -55,7 +55,7 @@
 		8CD048DD26E4CF6900763F1A /* HP35CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35CalculatorModel.swift; sourceTree = "<group>"; };
 		8CDF829625E144C8005AADE5 /* HP35.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HP35.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDF829925E144C8005AADE5 /* HP35App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35App.swift; sourceTree = "<group>"; };
-		8CDF829B25E144C8005AADE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8CDF829B25E144C8005AADE5 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		8CDF829D25E144C9005AADE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CDF82A025E144C9005AADE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CDF82A225E144C9005AADE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				8CDF829925E144C8005AADE5 /* HP35App.swift */,
-				8CDF829B25E144C8005AADE5 /* ContentView.swift */,
+				8CDF829B25E144C8005AADE5 /* CalculatorView.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -469,7 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C9B78E62606912A00CC0AF7 /* HP35Calculator.swift in Sources */,
-				8CDF829C25E144C8005AADE5 /* ContentView.swift in Sources */,
+				8CDF829C25E144C8005AADE5 /* CalculatorView.swift in Sources */,
 				8CDF829A25E144C8005AADE5 /* HP35App.swift in Sources */,
 				8CD048DE26E4CF6900763F1A /* HP35CalculatorModel.swift in Sources */,
 			);
