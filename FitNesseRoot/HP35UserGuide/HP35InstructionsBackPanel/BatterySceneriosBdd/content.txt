@@ -1,0 +1,49 @@
+!***> BDD Steps
+
+|scenario         |given battery level is|percentage|
+|set battery level|@percentage                      |
+
+|scenario|then display does not show the decimal points|
+|check   |show decimal points          |false          |
+
+|scenario|then display shows its all about to go off, on the blink, up the swanny!|
+|check   |show decimal points                        |true                        |
+
+*!
+!***> Fixture Setup
+
+|script|Calculator Power|
+
+*!
+!2 Low Battery Warning Scenarios
+
+|script                                                                  |
+|Given battery level is                       |100%                      |
+|Then display does not show the decimal points                           |
+|Given battery level is                       |50%                       |
+|Then display does not show the decimal points                           |
+|Given battery level is                       |5%                        |
+|Then display shows its all about to go off, on the blink, up the swanny!|
+
+!***> More...
+
+Additional scenarios added by BA to check additional states upto and around the low battery status.
+
+Uses a mix of BDD style scenario type language and table style inputs for a balance of natural language and conciseness.
+
+|scenario         |given battery level _  display shows _|battery level,decimal points|
+|set battery level|@batteryLevel                                                     |
+|check            |show decimal points                   |@decimalPoints             |
+
+|given battery level display shows                                 |
+|battery level|decimal points|#note                                |
+|100%         |false         |                                     |
+|75%          |false         |                                     |
+|50%          |false         |                                     |
+|25%          |false         |                                     |
+|6%           |false         |Check just before we get to low power|
+|5%           |true          |                                     |
+|1%           |true          |                                     |
+|0%           |true          |                                     |
+
+*!

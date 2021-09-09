@@ -77,7 +77,6 @@ struct CalculatorView: View {
                 CalcButton("3")
             }
 
-
             HStack() {
                 CalcButton("÷")
                 CalcButton("0")

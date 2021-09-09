@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3B34E826E9FE2B00A122DB /* HP35CalculatorPowerFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B34E726E9FE2B00A122DB /* HP35CalculatorPowerFixture.swift */; };
+		8C3B34EA26EA16AC00A122DB /* HP35CalculatorPowerTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B34E926EA16AC00A122DB /* HP35CalculatorPowerTypes.swift */; };
 		8C9B78E62606912A00CC0AF7 /* HP35Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */; };
 		8C9B78E72606912A00CC0AF7 /* HP35Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */; };
 		8C9B78EF2606916100CC0AF7 /* HP35CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78EE2606916100CC0AF7 /* HP35CalculatorTests.swift */; };
@@ -44,6 +46,8 @@
 		85636D8E327F5AA17F50A741 /* Pods-HP35Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35Tests.debug.xcconfig"; path = "Target Support Files/Pods-HP35Tests/Pods-HP35Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		885FDF937A0C37969CF25454 /* Pods-HP35.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35.release.xcconfig"; path = "Target Support Files/Pods-HP35/Pods-HP35.release.xcconfig"; sourceTree = "<group>"; };
 		8A0B74A3DFEA047A223E6861 /* Pods-HP35-HP35UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35-HP35UITests.debug.xcconfig"; path = "Target Support Files/Pods-HP35-HP35UITests/Pods-HP35-HP35UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C3B34E726E9FE2B00A122DB /* HP35CalculatorPowerFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35CalculatorPowerFixture.swift; sourceTree = "<group>"; };
+		8C3B34E926EA16AC00A122DB /* HP35CalculatorPowerTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35CalculatorPowerTypes.swift; sourceTree = "<group>"; };
 		8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35Calculator.swift; sourceTree = "<group>"; };
 		8C9B78EE2606916100CC0AF7 /* HP35CalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35CalculatorTests.swift; sourceTree = "<group>"; };
 		8C9B78F32606919700CC0AF7 /* HP35CalculatorFixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35CalculatorFixture.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				8C9B78F32606919700CC0AF7 /* HP35CalculatorFixture.swift */,
+				8C3B34E726E9FE2B00A122DB /* HP35CalculatorPowerFixture.swift */,
+				8C3B34E926EA16AC00A122DB /* HP35CalculatorPowerTypes.swift */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -460,6 +466,8 @@
 			files = (
 				8C9B78E72606912A00CC0AF7 /* HP35Calculator.swift in Sources */,
 				8CCEFADC25EA664000219592 /* HP35AcceptanceTests.m in Sources */,
+				8C3B34E826E9FE2B00A122DB /* HP35CalculatorPowerFixture.swift in Sources */,
+				8C3B34EA26EA16AC00A122DB /* HP35CalculatorPowerTypes.swift in Sources */,
 				8C9B78F42606919700CC0AF7 /* HP35CalculatorFixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

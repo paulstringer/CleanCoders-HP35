@@ -5,7 +5,7 @@
 To add your first "page", click the [[Edit][.FrontPage?edit]] button and add a [[!-WikiWord-!][.FitNesse.UserGuide.FitNesseWiki.WikiWord]] to the page.
 
 | '''HP-35 for iOS''' |
-| [[HP-35 Instructions][.HP35InstructionBackPanel]] | ''Building an HP-35, HP's first pocket calculator.'' |
+| [[HP-35 Instructions][.HP35UserGuide]] | ''Building an HP-35, HP's first pocket calculator.'' |
 
 | '''To Learn More...''' |
 | [[User Guide][.FitNesse.UserGuide]] | ''Answer the rest of your questions here.'' |
