@@ -11,9 +11,8 @@ class Calculator {
     var ex: String?
 
     var display: String {
-        let xFormatted = displayFormatter.string(for: x) ?? ""
-        let displayable = xFormatted.trimmingCharacters(in: CharacterSet(charactersIn: "0"))
-        return displayable
+        let formatted = displayFormatter.string(for: x) ?? ""
+        return ( x == Double.zero ) ? formatted : formatted.trimmingCharacters(in: .init(charactersIn: "0"))
     }
     
 	var flashError: Bool = false
@@ -22,6 +21,7 @@ class Calculator {
 	}
 
 	private var enteringNumber = false
+    private var enteringDecimal = false
     private var enterOnNext = false
     private var eex = false
 	private var chs = false
@@ -56,13 +56,17 @@ class Calculator {
             ex(numeric)
         } else if enteringNumber {
             if (enterOnNext) { press("enter") }
-            guard let combined = Double("\(Int(pop()))" + "\(Int(numeric))") else { return }
-            push( combined )
+            guard let concatenatedValue = Double("\(Int(pop()))" + "\(Int(numeric))") else { return }
+            push( concatenatedValue )
+        } else if enteringDecimal {
+            guard let concatenatedValue = Double("\(Int(pop()))" + "." + "\(Int(numeric))") else { return }
+            push( concatenatedValue )
         } else {
             if (enterOnNext) { press("enter") }
             register[0] = numeric
         }
 
+        enteringDecimal = false
         enteringNumber = true
 
     }
@@ -120,8 +124,11 @@ class Calculator {
         case "sin":
             push(sin(Double.toRadians(pop())))
         case "x^y":
-            push(exp(log(pop())*pop()))
+            push(pow(pop(), pop()))
+        case ".":
+            enteringDecimal = true
 		default:
+            print("KEY NOT IMPLEMENTED YET")
             return
 		}
 

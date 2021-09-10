@@ -5,6 +5,15 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "open http://localhost:8080/HP35UserGuide.HP35InstructionsBackPanel?test&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -32,7 +41,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "open http://localhost:8080/HP35UserGuide?suite&#10;">
+               scriptText = "open http://localhost:8080/HP35UserGuide.HP35InstructionsBackPanel&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -50,7 +59,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;#open http://localhost:8080/HP35UserGuide?suite&#10;">
+               scriptText = "open http://localhost:8080/HP35UserGuide.HP35InstructionsBackPanel?test&#10;">
             </ActionContent>
          </ExecutionAction>
       </PostActions>
@@ -67,6 +76,21 @@
             <SkippedTests>
                <Test
                   Identifier = "HP35CalculatorTests">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8C3B34EE26EB80DA00A122DB"
+               BuildableName = "HP35UITests.xctest"
+               BlueprintName = "HP35UITests"
+               ReferencedContainer = "container:HP35.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "HP35UITests">
                </Test>
             </SkippedTests>
          </TestableReference>

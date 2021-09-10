@@ -1,8 +1,7 @@
 !contents -R2 -g -p -f -h
 !1 Calculator Example
 ''The following examples are adapted from an original [[Calculator Example][http://fit.c2.com/wiki.cgi?CalculatorExample]] created by Ward Cunningham at the site http://fit.c2.com.''
-
 !4 The HP-35 was HP's first pocket calculator. It was introduced at a time when most calculators had only the four basic functions. The HP-35 was the first pocket calculator with transcendental functions, and the first with RPN.
-!4 The following specifications have been derived from the instructions printed on the back of the calculator. (Image from http://www.hpmuseum.org/hp35.htm)
-'''!img http://fit.c2.com/files/hp35bk.jpg '''
+!4 The following specifications have been derived from the instructions printed on the back of the calculator. (Image from https://www.hpmuseum.org/35bk.jpg)
+'''!img https://www.hpmuseum.org/35bk.jpg '''
 

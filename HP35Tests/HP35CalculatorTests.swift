@@ -10,7 +10,7 @@ class HP35CalculatorTests: XCTestCase {
 	}
 
     func testInitialDisplay() {
-        XCTAssertEqual(calc.display, ".")
+        XCTAssertEqual(calc.display, "0.")
     }
 
 	func testEnteringNumbers() {
@@ -109,7 +109,6 @@ class HP35CalculatorTests: XCTestCase {
         calc.press("+")
         assertStack(9, 0, 0, 0)
         calc.press("6")
-        print(calc.register)
         assertStack(6, 9, 0, 0)
         calc.press("enter")
         assertStack(6, 6, 9, 0)
@@ -134,6 +133,25 @@ class HP35CalculatorTests: XCTestCase {
         calc.press("1")
         calc.press("2")
         assertStack(12, 0, 0, 0)
+    }
+
+    func testMultipleNumberDecimalKeyPresses() {
+        calc.press("1")
+        calc.press(".")
+        calc.press("5")
+        assertStack(1.5, 0, 0, 0)
+    }
+
+    func testPowerKey() {
+        calc.press("1")
+        calc.press(".")
+        calc.press("5")
+        calc.press("chs")
+        calc.press("enter")
+        assertStack(-1.5, -1.5, 0, 0)
+        calc.press("4")
+        calc.press("x^y")
+        assertStack(0.125, 0, 0, 0)
     }
 
     func assertStack(_ x: Double, _ y: Double, _ z: Double, _ t: Double) {

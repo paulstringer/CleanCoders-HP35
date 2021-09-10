@@ -41,7 +41,7 @@ Uses a mix of BDD style scenario type language and table style inputs for a bala
 |75%          |false         |                                     |
 |50%          |false         |                                     |
 |25%          |false         |                                     |
-|6%           |false         |Check just before we get to low power|
+|6%           |false         |Check just before we get into low power state|
 |5%           |true          |                                     |
 |1%           |true          |                                     |
 |0%           |true          |                                     |

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C3B34E826E9FE2B00A122DB /* HP35CalculatorPowerFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B34E726E9FE2B00A122DB /* HP35CalculatorPowerFixture.swift */; };
 		8C3B34EA26EA16AC00A122DB /* HP35CalculatorPowerTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B34E926EA16AC00A122DB /* HP35CalculatorPowerTypes.swift */; };
+		8C3B34F226EB80DA00A122DB /* HP35UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B34F126EB80DA00A122DB /* HP35UITests.swift */; };
 		8C9B78E62606912A00CC0AF7 /* HP35Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */; };
 		8C9B78E72606912A00CC0AF7 /* HP35Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */; };
 		8C9B78EF2606916100CC0AF7 /* HP35CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B78EE2606916100CC0AF7 /* HP35CalculatorTests.swift */; };
@@ -25,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8C3B34F426EB80DA00A122DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CDF828E25E144C8005AADE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CDF829525E144C8005AADE5;
+			remoteInfo = HP35;
+		};
 		8CDF82A825E144C9005AADE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CDF828E25E144C8005AADE5 /* Project object */;
@@ -48,6 +56,9 @@
 		8A0B74A3DFEA047A223E6861 /* Pods-HP35-HP35UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP35-HP35UITests.debug.xcconfig"; path = "Target Support Files/Pods-HP35-HP35UITests/Pods-HP35-HP35UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C3B34E726E9FE2B00A122DB /* HP35CalculatorPowerFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35CalculatorPowerFixture.swift; sourceTree = "<group>"; };
 		8C3B34E926EA16AC00A122DB /* HP35CalculatorPowerTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35CalculatorPowerTypes.swift; sourceTree = "<group>"; };
+		8C3B34EF26EB80DA00A122DB /* HP35UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HP35UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3B34F126EB80DA00A122DB /* HP35UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HP35UITests.swift; sourceTree = "<group>"; };
+		8C3B34F326EB80DA00A122DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C9B78E52606912A00CC0AF7 /* HP35Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35Calculator.swift; sourceTree = "<group>"; };
 		8C9B78EE2606916100CC0AF7 /* HP35CalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35CalculatorTests.swift; sourceTree = "<group>"; };
 		8C9B78F32606919700CC0AF7 /* HP35CalculatorFixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP35CalculatorFixture.swift; sourceTree = "<group>"; };
@@ -72,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8C3B34EC26EB80DA00A122DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CCEFAD525EA664000219592 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +132,15 @@
 				CB09E808C8D36957E6C013BF /* Pods-HP35AcceptanceTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8C3B34F026EB80DA00A122DB /* HP35UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C3B34F126EB80DA00A122DB /* HP35UITests.swift */,
+				8C3B34F326EB80DA00A122DB /* Info.plist */,
+			);
+			path = HP35UITests;
 			sourceTree = "<group>";
 		};
 		8C9B78CD26068E4500CC0AF7 /* App */ = {
@@ -170,6 +197,7 @@
 				8CDF829825E144C8005AADE5 /* HP35 */,
 				8CDF82AA25E144C9005AADE5 /* HP35Tests */,
 				8CCEFADA25EA664000219592 /* HP35AcceptanceTests */,
+				8C3B34F026EB80DA00A122DB /* HP35UITests */,
 				8CDF829725E144C8005AADE5 /* Products */,
 				7E234A54E90C1C7E33A1C82B /* Pods */,
 				E931B76240FF79784D693AC7 /* Frameworks */,
@@ -182,6 +210,7 @@
 				8CDF829625E144C8005AADE5 /* HP35.app */,
 				8CDF82A725E144C9005AADE5 /* HP35Tests.xctest */,
 				8CCEFAD925EA664000219592 /* HP35AcceptanceTests.app */,
+				8C3B34EF26EB80DA00A122DB /* HP35UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +259,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8C3B34EE26EB80DA00A122DB /* HP35UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3B34F826EB80DA00A122DB /* Build configuration list for PBXNativeTarget "HP35UITests" */;
+			buildPhases = (
+				8C3B34EB26EB80DA00A122DB /* Sources */,
+				8C3B34EC26EB80DA00A122DB /* Frameworks */,
+				8C3B34ED26EB80DA00A122DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C3B34F526EB80DA00A122DB /* PBXTargetDependency */,
+			);
+			name = HP35UITests;
+			productName = HP35UITests;
+			productReference = 8C3B34EF26EB80DA00A122DB /* HP35UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		8CCEFAD825EA664000219592 /* HP35AcceptanceTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CCEFAE225EA664000219592 /* Build configuration list for PBXNativeTarget "HP35AcceptanceTests" */;
@@ -293,9 +340,13 @@
 		8CDF828E25E144C8005AADE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					8C3B34EE26EB80DA00A122DB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 8CDF829525E144C8005AADE5;
+					};
 					8CCEFAD825EA664000219592 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -325,11 +376,19 @@
 				8CDF829525E144C8005AADE5 /* HP35 */,
 				8CDF82A625E144C9005AADE5 /* HP35Tests */,
 				8CCEFAD825EA664000219592 /* HP35AcceptanceTests */,
+				8C3B34EE26EB80DA00A122DB /* HP35UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8C3B34ED26EB80DA00A122DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CCEFAD625EA664000219592 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -460,6 +519,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8C3B34EB26EB80DA00A122DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3B34F226EB80DA00A122DB /* HP35UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CCEFAD425EA664000219592 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,6 +561,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8C3B34F526EB80DA00A122DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CDF829525E144C8005AADE5 /* HP35 */;
+			targetProxy = 8C3B34F426EB80DA00A122DB /* PBXContainerItemProxy */;
+		};
 		8CDF82A925E144C9005AADE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8CDF829525E144C8005AADE5 /* HP35 */;
@@ -502,6 +574,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8C3B34F626EB80DA00A122DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HP35UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleancoder.HP35UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HP35;
+			};
+			name = Debug;
+		};
+		8C3B34F726EB80DA00A122DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HP35UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleancoder.HP35UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HP35;
+			};
+			name = Release;
+		};
 		8CCEFAE325EA664000219592 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5901BF21BC9F524E33736FE6 /* Pods-HP35AcceptanceTests.debug.xcconfig */;
@@ -754,6 +864,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8C3B34F826EB80DA00A122DB /* Build configuration list for PBXNativeTarget "HP35UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3B34F626EB80DA00A122DB /* Debug */,
+				8C3B34F726EB80DA00A122DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8CCEFAE225EA664000219592 /* Build configuration list for PBXNativeTarget "HP35AcceptanceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
