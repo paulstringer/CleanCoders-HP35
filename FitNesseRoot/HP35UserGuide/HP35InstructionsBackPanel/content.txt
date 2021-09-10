@@ -100,3 +100,28 @@ To enter numbers to the exact power of 10x
 |6  |1 |06 |1,000,000. e.g. 1 Million|
 
 *!
+!***> Following any trig function z is duplicated into register t.
+
+All angles are in degrees.
+
+Example (2+3) * (4/5) / sin(30) * (4^-1.5) = 1.0000
+
+|Calculator       |
+|key  |x?    |y?  |
+|2    |2     |    |
+|enter|2     |2   |
+|3    |3     |2   |
+|+    |5     |    |
+|4    |4     |5   |
+|*    |20    |    |
+|5    |5     |20  |
+|/    |4     |    |
+|30   |30    |4   |
+|sin  |.5    |4   |
+|/    |6     |    |
+|-1.5 |-1.5  |8   |
+|enter|-1.5  |-1.5|
+|4    |4     |-1.5|
+|x^y  |.125  |8   |
+|*    |1.0000|    |
+*!

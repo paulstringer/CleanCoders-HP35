@@ -55,8 +55,8 @@ class Calculator {
             ex(numeric)
         } else if enteringNumber {
             if (enterOnNext) { press("enter") }
-            let combined = "\(Int(pop()))\(Int(numeric))"
-            push( Double(combined)! )
+            guard let combined = Double("\(Int(pop()))" + "\(Int(numeric))") else { return }
+            push( combined )
         } else {
             if (enterOnNext) { press("enter") }
             register[0] = numeric
