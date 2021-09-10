@@ -64,6 +64,11 @@
                BlueprintName = "HP35Tests"
                ReferencedContainer = "container:HP35.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "HP35CalculatorTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

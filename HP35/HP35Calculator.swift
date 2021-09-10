@@ -44,7 +44,8 @@ class Calculator {
 
 	private func push(_ value: Double) {
         push()
-		register[0] = value
+        let roundedValue = round(value * 10000000000) / 10000000000;
+		register[0] = roundedValue
 	}
 
     func press(_ numeric: Double) {
@@ -75,6 +76,8 @@ class Calculator {
 
 		switch key {
 		case "÷":
+            fallthrough
+        case "/":
 			if (x == 0 ){
 				flashError = true
 			} else {
@@ -87,6 +90,9 @@ class Calculator {
             enterOnNext = true
         case "+":
             push(pop() + pop());
+            enterOnNext = true
+        case "*":
+            push(pop() * pop());
             enterOnNext = true
 		case "clx":
 			flashError = false
@@ -111,6 +117,10 @@ class Calculator {
             }
             enterOnNext = true
             eex = true
+        case "sin":
+            push(sin(Double.toRadians(pop())))
+        case "x^y":
+            push(exp(log(pop())*pop()))
 		default:
             return
 		}
@@ -139,4 +149,12 @@ class Calculator {
         return formatter
     }()
 
+}
+
+
+extension Double {
+
+    static func toRadians(_ degrees: Double) -> Double {
+        degrees * Double.pi / 180
+    }
 }
