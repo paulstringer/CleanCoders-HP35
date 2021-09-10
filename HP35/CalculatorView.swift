@@ -24,7 +24,7 @@ struct CalcButtonStyle: ButtonStyle {
 struct CalcButton: View {
 
     @Environment(\.isEnabled) var isEnabled
-    @EnvironmentObject var calculatorModel: HP35CalculatorModel
+    @EnvironmentObject var calculator: HP35CalculatorPresenter
 
     let key: String
 
@@ -34,7 +34,7 @@ struct CalcButton: View {
 
     var body: some View {
         Button(key) {
-            calculatorModel.press(key)
+            calculator.press(key)
         }
         .buttonStyle(
             CalcButtonStyle(isEnabled: isEnabled)
@@ -44,16 +44,16 @@ struct CalcButton: View {
 
 struct CalculatorView: View {
 
-    @EnvironmentObject var calculatorModel: HP35CalculatorModel
+    @EnvironmentObject var calculator: HP35CalculatorPresenter
 
     var body: some View {
 
         VStack {
 
             HStack {
-                Text(calculatorModel.lhsDisplay)
+                Text(calculator.lhsDisplay)
                 Spacer()
-                Text(calculatorModel.rhsDisplay ?? "")
+                Text(calculator.rhsDisplay ?? "")
             }
             .lineLimit(1).font(.largeTitle).foregroundColor(.red)
 
@@ -134,10 +134,10 @@ struct CalculatorView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let model = HP35CalculatorModel()
-        model.press("eex")
-        model.press("6")
+        let presenter = HP35CalculatorPresenter()
+        presenter.press("eex")
+        presenter.press("6")
         return CalculatorView()
-            .environmentObject(model)
+            .environmentObject(presenter)
     }
 }

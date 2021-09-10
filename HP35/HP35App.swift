@@ -8,12 +8,12 @@ import SwiftUI
 @main
 struct HP35App: App {
 
-    @StateObject private var calculatorModel = HP35CalculatorModel()
+    @StateObject private var calculator = HP35CalculatorPresenter()
     
     var body: some Scene {
         WindowGroup {
             CalculatorView()
-                .environmentObject(calculatorModel)
+                .environmentObject(calculator)
         }
     }
 }

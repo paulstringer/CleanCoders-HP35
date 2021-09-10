@@ -1,5 +1,9 @@
 import Foundation
 
+protocol CalculatorBatteryPower {
+    var isLowBattery: Bool  { get }
+}
+
 class Calculator {
 
     private(set) var register = [0.0,0.0,0.0,0.0]
@@ -17,7 +21,7 @@ class Calculator {
     
 	var flashError: Bool = false
 	var showDecimalPoints: Bool {
-		return volts.doubleValue <= 3.30
+        return batteryPower?.isLowBattery ?? false /*volts.doubleValue <= 3.30*/
 	}
 
 	private var enteringNumber = false
@@ -25,7 +29,7 @@ class Calculator {
     private var enterOnNext = false
     private var eex = false
 	private var chs = false
-	var volts: NSNumber = 0
+
 
 	private func push() {
         for i in (1...3).reversed() {
@@ -156,8 +160,13 @@ class Calculator {
         return formatter
     }()
 
-}
+    private let batteryPower: CalculatorBatteryPower?
 
+    init(batteryPower: CalculatorBatteryPower? = nil) {
+        self.batteryPower = batteryPower
+    }
+
+}
 
 extension Double {
 

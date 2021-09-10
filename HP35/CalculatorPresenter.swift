@@ -1,6 +1,6 @@
 import Foundation
 
-class HP35CalculatorModel: ObservableObject {
+class HP35CalculatorPresenter: ObservableObject {
 
     let calculator = Calculator()
     @Published var lhsDisplay: String = ""

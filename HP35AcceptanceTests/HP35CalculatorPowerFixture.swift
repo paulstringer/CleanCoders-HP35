@@ -4,11 +4,17 @@ import Foundation
 
 class HP35CalculatorPowerFixture: NSObject {
 
-    let calc = Calculator()
+    let power = DeviceBatterySimulator()
+    let calc: Calculator
+
+    override init() {
+        calc = Calculator(batteryPower: power)
+        super.init()
+    }
 
     @objc var volts: NSNumber = 3.75 {
         didSet {
-            calc.volts = volts
+            power.volts = volts
         }
     }
 
@@ -22,7 +28,7 @@ class HP35CalculatorPowerFixture: NSObject {
     @objc var batteryLevel: String = "100%" {
         didSet {
             guard let batteryPower = BatteryPowerLevel(batteryLevel) else { return }
-            calc.volts = batteryPower.voltage.double as NSNumber
+            power.volts = batteryPower.voltage.double as NSNumber
         }
     }
 
