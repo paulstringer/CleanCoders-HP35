@@ -11,8 +11,8 @@ class HP35CalculatorPresenter: ObservableObject {
     }
 
     func press(_ key: String) -> Void {
-        let keyNormalised = key.lowercased().replacingOccurrences(of: " ", with: "")
-        calculator.press(keyNormalised)
+        let key = calculatorKeyPress(for: key)
+        calculator.press(key)
         readDisplay()
     }
 
@@ -21,5 +21,8 @@ class HP35CalculatorPresenter: ObservableObject {
         rhsDisplay = calculator.ex
     }
 
+    private func calculatorKeyPress(for key: String) -> String {
+        key.lowercased().replacingOccurrences(of: " ", with: "")
+    }
 }
 

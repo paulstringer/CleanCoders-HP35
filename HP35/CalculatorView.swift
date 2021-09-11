@@ -1,47 +1,5 @@
 import SwiftUI
 
-struct CalcButtonStyle: ButtonStyle {
-    let isEnabled: Bool
-
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .lineLimit(1)
-            .font(.title.bold())
-            .minimumScaleFactor(0.5)
-            .foregroundColor(
-                .blue
-                .opacity(
-                    configuration.isPressed ?
-                        0.8
-                        :
-                        isEnabled ? 1.0 : 0.4
-                )
-            )
-    }
-}
-
-struct CalcButton: View {
-
-    @Environment(\.isEnabled) var isEnabled
-    @EnvironmentObject var calculator: HP35CalculatorPresenter
-
-    let key: String
-
-    init(_ key: String) {
-        self.key = key
-    }
-
-    var body: some View {
-        Button(key) {
-            calculator.press(key)
-        }
-        .buttonStyle(
-            CalcButtonStyle(isEnabled: isEnabled)
-        )
-    }
-}
-
 struct CalculatorView: View {
 
     @EnvironmentObject var calculator: HP35CalculatorPresenter
@@ -55,79 +13,78 @@ struct CalculatorView: View {
                 Spacer()
                 Text(calculator.rhsDisplay ?? "")
             }
-            .lineLimit(1).font(.largeTitle).foregroundColor(.red)
-
-            Divider()
+            .modifier(CalculatorDisplay())
 
             Group {
 
                 HStack {
-                    CalcButton("x^y")
-                    CalcButton("log").disabled(true)
-                    CalcButton("ln").disabled(true)
-                    CalcButton("ex")
-                    CalcButton("clr")
+                    CalcButton("x^y", .math)
+                    CalcButton("log", .math)
+                    CalcButton("ln", .math)
+                    CalcButton("ex", .math)
+                    CalcButton("CLR", .stack)
                 }
 
                 HStack {
-                    CalcButton("√x").disabled(true)
-                    CalcButton("arc").disabled(true)
-                    CalcButton("sin")
-                    CalcButton("cos").disabled(true)
-                    CalcButton("tan").disabled(true)
+                    CalcButton("√x", .math).disabled(true)
+                    CalcButton("arc", .trig).disabled(true)
+                    CalcButton("sin", .trig)
+                    CalcButton("cos", .trig).disabled(true)
+                    CalcButton("tan", .trig).disabled(true)
                 }
 
                 HStack {
-                    CalcButton("1/x")
-                    CalcButton("x⇄y")
-                    CalcButton("R↓")
-                    CalcButton("STO")
-                    CalcButton("RCL")
+                    CalcButton("1/x", .math)
+                    CalcButton("x⇄y", .math)
+                    CalcButton("R↓", .math)
+                    CalcButton("STO", .math)
+                    CalcButton("RCL", .math)
                 }.disabled(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
 
-                HStack {
-                    CalcButton("ENTER").fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/,
-                                   vertical: false)
-                    CalcButton("CH S")
-                    CalcButton("E EX")
-                    CalcButton("CL X")
+                HStack(alignment: .bottom) {
+                    CalcButton("ENTER", .enter)
+                    CalcButton("CH S", .stack)
+                    CalcButton("E EX", .stack)
+                    CalcButton("CL X", .stack)
                 }
 
                 HStack {
-                    CalcButton("-")
-                    CalcButton("7")
-                    CalcButton("8")
-                    CalcButton("9")
+                    CalcButton("-", .arithmetic)
+                    CalcButton("7", .number)
+                    CalcButton("8", .number)
+                    CalcButton("9", .number)
                 }
 
                 HStack {
-                    CalcButton("+")
-                    CalcButton("4")
-                    CalcButton("5")
-                    CalcButton("6")
+                    CalcButton("+", .arithmetic)
+                    CalcButton("4", .number)
+                    CalcButton("5", .number)
+                    CalcButton("6", .number)
                 }
 
                 HStack {
-                    CalcButton("x")
-                    CalcButton("1")
-                    CalcButton("2")
-                    CalcButton("3")
+                    CalcButton("x", .arithmetic)
+                    CalcButton("1", .number)
+                    CalcButton("2", .number)
+                    CalcButton("3", .number)
                 }
 
                 HStack {
-                    CalcButton("÷")
-                    CalcButton("0")
-                    CalcButton(".")
-                    CalcButton("π").disabled(true)
+                    CalcButton("÷", .arithmetic)
+                    CalcButton("0", .number)
+                    CalcButton(".", .number)
+                    CalcButton("π", .number).disabled(true)
                 }
             }
-
-            Text("Grayed keys are unimplemented!")
-                .font(.footnote)
-                .foregroundColor(.gray)
+            .frame(
+                maxWidth: .infinity,
+                maxHeight: .infinity
+            )
         }
-        .padding()
-
+        .padding(.vertical, 60)
+        .padding(.horizontal)
+        .background(Color("Background"))
+        .ignoresSafeArea(.container, edges: .vertical)
     }
 
 }
@@ -138,6 +95,139 @@ struct ContentView_Previews: PreviewProvider {
         presenter.press("eex")
         presenter.press("6")
         return CalculatorView()
+            .environment(\.sizeCategory, .extraExtraExtraLarge)
             .environmentObject(presenter)
     }
+}
+
+//MARK: - Calculator Display
+
+struct CalculatorDisplay: ViewModifier {
+
+    func body(content: Content) -> some View {
+        content.font(Font.largeTitle.bold())
+        .background(
+            Rectangle()
+            .foregroundColor(.white)
+            .padding(-15)
+        )
+        .padding(15)
+        .padding(.bottom, 30)
+    }
+}
+
+
+//MARK: - Calculator Button
+
+enum CalcButtonAppearance {
+    case number, math, trig, stack, enter, arithmetic
+    var color: Color {
+        switch self {
+        case .number:
+            return Color.white
+        case .math:
+            return Color("FKey")
+        case .trig:
+            return Color("TKey")
+        default:
+            return Color("BKey")
+        }
+    }
+    var labelTop: Bool {
+        switch self {
+        case .number:
+            fallthrough
+        case .arithmetic:
+            fallthrough
+        case .enter:
+            return false
+        default:
+            return true
+        }
+    }
+    var textColor: Color {
+        switch self {
+        case .arithmetic:
+            return .white
+        case .enter:
+            return .white
+        default:
+            return .black
+        }
+    }
+}
+
+struct CalcButtonStyle: ButtonStyle {
+
+    let appearance: CalcButtonAppearance
+
+    func makeBody(configuration: Configuration) -> some View {
+
+        Group {
+            if appearance.labelTop {
+                VStack(spacing: 3) {
+                    configuration.label
+                    .font(
+                        .footnote.bold()
+                    )
+                    backgroundView(
+                        configuration.isPressed,
+                        appearance.color)
+                }
+            } else {
+                backgroundView(
+                    configuration.isPressed,
+                    appearance.color)
+                .overlay(configuration.label)
+                .font(.body)
+            }
+        }
+        .foregroundColor(appearance.textColor)
+
+    }
+
+    func backgroundView(_ isPressed: Bool, _ color: Color) -> some View  {
+        Rectangle()
+        .foregroundColor(color)
+        .shadow(
+            color: .black,
+            radius: 0,
+            x: isPressed ? 3 : 5,
+            y: isPressed ? 3 : 5
+        )
+        .frame(maxHeight:30)
+        .padding(.horizontal, 10)
+        .opacity(
+            isPressed ? 0.5 : 1.0
+        )
+        .offset(
+            x: isPressed ? 2 : 0,
+            y: isPressed ? 2 : 0
+        )
+    }
+
+}
+
+struct CalcButton: View {
+
+    @EnvironmentObject var calculator: HP35CalculatorPresenter
+
+    let key: String
+    let appearance: CalcButtonAppearance
+
+    init(_ key: String, _ appearance: CalcButtonAppearance) {
+        self.key = key
+        self.appearance = appearance
+    }
+
+    var body: some View {
+        Button(key) {
+            calculator.press(key)
+        }
+        .buttonStyle(
+            CalcButtonStyle(appearance: appearance)
+        )
+        .frame(minWidth: (appearance == .enter) ? 138 : 0)
+    }
+
 }

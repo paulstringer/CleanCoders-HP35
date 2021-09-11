@@ -1,19 +1,15 @@
-//
-//  HP35UITests.swift
-//  HP35UITests
-//
-//  Created by paulstringer on 10/09/2021.
-//
-
 import XCTest
 
 class HP35UITests: XCTestCase {
 
-    func testExample() throws {
+    var app: XCUIApplication!
 
-        let app = XCUIApplication()
+    override func setUp() {
+        app = XCUIApplication()
         app.launch()
-        continueAfterFailure = false
+    }
+
+    func testCalculatorExampleArithmetic() throws {
 
         XCTAssertTrue(app.staticTexts["0."].exists)
         

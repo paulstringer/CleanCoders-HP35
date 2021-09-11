@@ -3,7 +3,7 @@ import UIKit
 
 struct DeviceBatteryPower: CalculatorBatteryPower {
 
-    private let device: UIDevice
+    let device: UIDevice
 
     var isLowBattery: Bool {
         return device.batteryLevel > 0.05

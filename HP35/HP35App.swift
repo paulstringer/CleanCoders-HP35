@@ -1,8 +1,3 @@
-//
-//  HP35App.swift
-//  HP35
-//
-
 import SwiftUI
 
 @main
